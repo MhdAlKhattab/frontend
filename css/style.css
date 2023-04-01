@@ -1,0 +1,578 @@
+* {
+  box-sizing: border-box;
+  font-family: Arial, Tahoma, sans-serif;
+}
+
+.container {
+  max-width: 1200px;
+}
+
+/* Start Navbar */
+
+.navbar {
+  background-color: #010810;
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 10000000000;
+  padding: 0;
+}
+
+.navbar .navbar-brand img {
+  width: 20vmin;
+  margin-right: 2vmin;
+}
+
+.navbar .navbar-nav {
+  margin-right: 15vh;
+}
+
+.navbar .navbar-nav .nav-link {
+  font-size: 2.5vmin;
+  margin-left: 1.5vh;
+  color: #efdbdb;
+  font-weight: bold
+}
+
+.navbar .navbar-nav .active>.nav-link,
+.navbar .navbar-nav .nav-link:hover {
+  color: #ff8100;
+}
+
+.navbar .navbar-toggler {
+  background-color: #f59f53;
+}
+
+.navbar .navbar-toggler:hover {
+  cursor: pointer;
+  outline: none;
+}
+
+.navbar .navbar-nav i {
+  color: #ff8100;
+  font-size: 3vmin;
+  margin-left: 2vh;
+  border: 1px solid #ff8100;
+  padding: -1px;
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* End Navbar */
+/* Start Home */
+.home {
+  background-image: url('../image/Setrex Background solid-11-11-13-14-14 (2).png');
+  background-size: cover;
+  min-height: 100vh;
+}
+
+.home .home-info {
+  padding-top: 30vh;
+  padding-left: 5vh;
+  color: #FFF;
+}
+
+.home .home-info h1 {
+  font-size: 8vmin;
+}
+
+.home .home-info h1:last-of-type {
+  color: #ff8100;
+}
+
+.home .home-info p {
+  margin-top: 2vh;
+}
+
+/* End Home */
+/* Start About Us */
+.about-us {
+  background-image: url('../image/Setrex\ Background\ solid-16-11-13-14-14-15-16\ \(2\).png');
+  background-size: cover;
+  min-height: 100vh;
+  color: #b6b6b6;
+  padding-top: 30vh;
+}
+
+.about-us .about-us-info {
+  padding-left: 10vh;
+}
+
+
+/* End About Us */
+/* Start plan */
+.plans {
+  background-image: url('../image/Setrex\ Background\ solid-15-11-13-14-14-15\ \(2\).png');
+  background-size: cover;
+  min-height: 100vh;
+}
+
+.plans .row {
+  justify-content: space-between;
+}
+
+.plans .card {
+  width: 22%;
+  background-color: rgba(0, 14, 27, .2);
+  color: #CCC;
+  border: 1px solid #103e57;
+  padding: 5vmin;
+  position: relative;
+  transition: .5s;
+  cursor: pointer;
+}
+.plans .card:hover{
+  width: 24%;
+  background-color: #103e57
+}
+
+.plans .card .card-header {
+  color: #cc9e6f;
+  margin-bottom: 2vmin;
+}
+
+.plans .card ul li {
+  border-bottom: 1px solid #CCC;
+  margin-bottom: 4vmin;
+}
+
+.plans .card p {
+  margin-bottom: 5vmin;
+
+}
+
+.plans .card button {
+  position: absolute;
+  bottom: 2vmin;
+  width: 50%;
+  right: 50%;
+  justify-content: center;
+  left: 25%;
+}
+
+/* End Plan */
+/* Start Note */
+.notes {
+  background-image: url('../image/bit-c.webp');
+  background-size: cover;
+  min-height: 100vh;
+  color: aliceblue;
+  position: relative;
+}
+
+.notes p {
+  margin-bottom: 5vh;
+  color: #efdbdb;
+}
+
+.notes .note {
+  border: 1px solid #CCC;
+  border-radius: 5px;
+  padding: 2vmin;
+  margin-bottom: 1vh;
+  background-color: rgba(16, 62, 87, .5);
+}
+
+.notes .note i {
+  font-size: 4vmin;
+  color: #f59f53;
+  margin-right: 1vmin;
+}
+
+.notes .note span {
+  font-size: 3vmin;
+  font-weight: 700;
+}
+
+.notes .note p {
+  margin-top: 3vh;
+}
+
+/* End Note */
+/* Start Calculator */
+.calculator {
+  background-image: url('../image/llxcmolvb1so4vwy.jpg');
+  background-size: cover;
+  min-height: 100vh;
+  color: #FFF;
+  position: relative;
+}
+
+.calculator p {
+  margin-bottom: 5vh;
+}
+
+.calculator form {
+  margin: auto;
+  width: 80%;
+  margin-top: 10vh;
+  border: 1px solid #010810;
+  padding: 10vmin;
+  border-radius: 5px;
+  background-color: rgb(227 213 200 / 10%);
+}
+
+.calculator form input,
+.calculator form select {
+  width: 100%;
+  background-color: transparent;
+  outline: none;
+  border: 1px solid #000;
+  padding: 5px;
+}
+
+.calculator form input::placeholder {
+  color: #FFF;
+  font-size: 3vmin;
+  font-weight: 500;
+}
+
+.calculator form select {
+  padding: 5px;
+  font-size: 3vmin;
+  font-weight: 500;
+  color: #FFF;
+  margin-bottom: 5vh;
+}
+
+/* End Calculator */
+
+/* Start LogIn */
+.login {
+  background-image: url('../image/Setrex\ Bacground2.jpg');
+  background-size: cover;
+  min-height: 100vh;
+}
+
+.login .overlay {
+  background-color: rgba(3, 31, 47, 0.8);
+}
+
+.login form {
+  width: 30%;
+  margin: 0 auto;
+  border: 1px solid #CCC;
+  border-radius: 5px;
+  background: white;
+  margin-top: 30vh;
+
+}
+
+.login form .log-header {
+  padding: 4vh 0;
+  background-color: aliceblue;
+  color: #ffae5b;
+  font-weight: 600;
+}
+
+.login form .row {
+  margin: 0;
+  padding: 0 2vh;
+}
+
+.login form select {
+  cursor: pointer;
+  outline: none;
+  border: 0;
+  font-size: 2vmin;
+  color: #1e7aa7;
+  font-weight: 700;
+}
+
+.login form input {
+  border: 0;
+  border-bottom: 1px solid #c5ccd3;
+  width: 90%;
+  border-radius: 0;
+  margin: 0 auto;
+  padding: 3vh;
+}
+
+.login form .log-footer button:first-of-type {
+  width: 50%;
+}
+
+.login form .log-footer {
+  margin: 0;
+  margin-top: 5vh;
+}
+
+.login form .log-footer button:last-of-type {
+  width: 48%;
+  background-color: #ff8100;
+  border: 1px solid #ff8100;
+}
+
+.login form .log-footer button:hover {
+  cursor: pointer;
+}
+
+.login form .log-footer button a {
+  color: #fff;
+}
+
+.login form .log-footer button a:hover {
+  text-decoration: none;
+}
+
+/* End LogIn */
+/* Start Sigu Up */
+.login form {
+  margin-top: 15vh;
+}
+
+.login form p {
+  padding: 0 3vh;
+  margin-top: 2vh;
+}
+
+.login form p a {
+  color: #28a745;
+}
+
+/* End Sign */
+/* Start Money */
+.money {
+  margin-top: 25vh;
+}
+
+.money .card {
+  background-color: rgba(0, 0, 0, 1);
+  color: #FFF;
+  box-shadow: 12px 9px 3px #CCC
+}
+
+.money img {
+  height: 100%;
+  padding: 1vmin;
+}
+
+.money h5 {
+  line-height: 2.1;
+}
+
+.money button {
+  background-color: #ff8100;
+  border: 0;
+  cursor: pointer;
+  width: 60%;
+}
+
+/* End Money */
+/* Start control */
+.control {
+  margin-top: 25vh;
+}
+.control h3{
+  color: #ff8100;
+}
+.control h3~p{
+  border: 1px solid #373737;
+  padding: 1vh 2vh;
+  border-radius: 5px;
+  color: #FFF;
+  background: #7a7875;
+  position: relative;
+}
+.control p i{
+  position: absolute;
+    right: 2vh;
+    font-size: 3vmin;
+    color: #000;
+    cursor: pointer;
+}
+.control .control-ba {
+  position: relative;
+  padding: 2vmin 4vmin;
+  background-color: #ff8100;
+  box-shadow: 5px 5px 8px #666565;
+  border-radius: 5px;
+  margin-bottom: 5vh;
+}
+
+.control .control-ba h2 {
+  color: #FFF;
+}
+
+.control .control-ba i {
+  position: absolute;
+  top: 2vmin;
+  right: 2vmin;
+  border: 1px solid #000;
+  padding: 2vmin;
+  color: #fff;
+  background: #000;
+  border-radius: 5px
+}
+
+/* End Control */
+/* Start FramWork */
+.overlay {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  min-height: 100%;
+  background-color: rgba(3, 31, 47, 0.6);
+}
+
+.header {
+  margin-bottom: 5vh;
+  color: #ff8100;
+  font-size: 8vmin;
+}
+
+.padding-top {
+  padding-top: 15vh;
+}
+
+.padding-botton {
+  padding-bottom: 8vh;
+}
+.btn{
+  cursor: pointer;
+}
+.pointer{
+  position: fixed;
+  bottom: 5vmin;
+  right: 5vmin;
+  width: 5vmin;
+  height: 5vmin;
+  line-height: 5vmin;
+  text-align: center;
+  border-radius: 50%;
+  background-color: #ff8100;
+  color: #fff;
+  font-size: 2vmin;
+  z-index: 222222;
+  cursor: pointer;
+}
+
+#scroll-top {
+  display: none;
+}
+/* End FramWork */
+/* Media */
+@media (max-width: 991px) {
+  .login form {
+    width: 70%;
+  }
+
+  .navbar .navbar-nav .nav-item a {
+    font-size: 3vmin;
+  }
+
+  .navbar .navbar-nav i {
+    margin: 2vmin;
+  }
+
+  .home .home-info {
+    padding-left: 2vh;
+  }
+
+  .about-us {
+    padding-top: 15vh;
+  }
+
+  .about-us .about-us-info {
+    padding-left: 0;
+    text-align: center;
+  }
+
+  .plans .card {
+    width: 40%;
+    margin: 0 auto;
+    margin-bottom: 2vh;
+  }
+
+  .calculator form select,
+  .calculator form input {
+    margin-bottom: 2vh;
+  }
+
+  .btn-success {
+    font-size: 3vmin;
+  }
+
+  .lead {
+    font-size: 3vmin;
+  }
+}
+
+/* Media */
+@media (max-width: 768px) {
+  .money .card {
+    width: 70%;
+    margin: auto;
+  }
+
+  .money .card img {
+    width: 100%;
+  }
+}
+
+/* Media */
+@media (max-width: 540px) {
+  .login form select {
+    font-size: 4vmin;
+  }
+
+  .home,
+  .about-us,
+  .calculator {
+    min-height: 70vh;
+  }
+
+  .plans .card {
+    width: 90%;
+    margin: 0 auto;
+    margin-bottom: 2vh;
+  }
+
+  .plans .card p {
+    margin-bottom: 15vmin;
+  }
+
+  .notes .note {
+    width: 80%;
+    margin: 0 auto;
+    margin-bottom: 2vh;
+  }
+
+  .calculator {
+    padding-bottom: 3vh;
+  }
+
+  .calculator h1 {
+    padding-top: 10vh;
+  }
+
+  .calculator form select {
+    margin-bottom: 0;
+  }
+
+  .money,
+  .control {
+    margin-top: 12vh;
+
+  }
+
+  .money .card {
+    width: 90%;
+  }
+
+}
+
+/* Media */
+@media (max-width: 410px) {
+  .login form {
+    width: 90%;
+  }
+
+  .plans .card ul li {
+    margin-bottom: 10vmin;
+  }
+
+}
