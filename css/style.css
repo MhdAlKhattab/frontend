@@ -63,7 +63,7 @@
 /* End Navbar */
 /* Start Home */
 .home {
-  background-image: url('../image/Setrex Background solid-11-11-13-14-14 (2).png');
+  background-image: url('../image/notes.png');
   background-size: cover;
   min-height: 100vh;
 }
@@ -89,7 +89,7 @@
 /* End Home */
 /* Start About Us */
 .about-us {
-  background-image: url('../image/Setrex\ Background\ solid-16-11-13-14-14-15-16\ \(2\).png');
+  background-image: url('../image/aboutUs.png');
   background-size: cover;
   min-height: 100vh;
   color: #b6b6b6;
@@ -104,8 +104,9 @@
 /* End About Us */
 /* Start plan */
 .plans {
-  background-image: url('../image/Setrex\ Background\ solid-15-11-13-14-14-15\ \(2\).png');
+  background-image: url('../image/plans.jpg');
   background-size: cover;
+  background-attachment: fixed;
   min-height: 100vh;
 }
 
@@ -115,17 +116,13 @@
 
 .plans .card {
   width: 22%;
-  background-color: rgba(0, 14, 27, .2);
+  background-color: rgba(0, 14, 27, .8);
   color: #CCC;
   border: 1px solid #103e57;
   padding: 5vmin;
   position: relative;
   transition: .5s;
   cursor: pointer;
-}
-.plans .card:hover{
-  width: 24%;
-  background-color: #103e57
 }
 
 .plans .card .card-header {
@@ -155,7 +152,7 @@
 /* End Plan */
 /* Start Note */
 .notes {
-  background-image: url('../image/bit-c.webp');
+  background-image: url('../image/notes.png');
   background-size: cover;
   min-height: 100vh;
   color: aliceblue;
@@ -193,7 +190,7 @@
 /* End Note */
 /* Start Calculator */
 .calculator {
-  background-image: url('../image/llxcmolvb1so4vwy.jpg');
+  background-image: url('../image/calculater.jpg');
   background-size: cover;
   min-height: 100vh;
   color: #FFF;
@@ -239,15 +236,11 @@
 
 /* End Calculator */
 
-/* Start LogIn */
+/* Start LogIn & Sign Up*/
 .login {
-  background-image: url('../image/Setrex\ Bacground2.jpg');
+  background-image: url('../image/login&sign.png');
   background-size: cover;
   min-height: 100vh;
-}
-
-.login .overlay {
-  background-color: rgba(3, 31, 47, 0.8);
 }
 
 .login form {
@@ -256,8 +249,7 @@
   border: 1px solid #CCC;
   border-radius: 5px;
   background: white;
-  margin-top: 30vh;
-
+  margin-top: 15vh;
 }
 
 .login form .log-header {
@@ -289,78 +281,61 @@
   margin: 0 auto;
   padding: 3vh;
 }
-
-.login form .log-footer button:first-of-type {
-  width: 50%;
-}
-
 .login form .log-footer {
   margin: 0;
   margin-top: 5vh;
+  position: relative;
 }
-
-.login form .log-footer button:last-of-type {
+.login form .log-footer button{
+  width: 50%;
+}
+.login form .log-footer a{
   width: 48%;
-  background-color: #ff8100;
+  background: #ff8100;
   border: 1px solid #ff8100;
 }
-
-.login form .log-footer button:hover {
-  cursor: pointer;
-}
-
-.login form .log-footer button a {
-  color: #fff;
-}
-
-.login form .log-footer button a:hover {
-  text-decoration: none;
-}
-
-/* End LogIn */
-/* Start Sigu Up */
-.login form {
-  margin-top: 15vh;
+.login form .log-footer a:hover{
+  outline: none;
 }
 
 .login form p {
   padding: 0 3vh;
   margin-top: 2vh;
 }
-
 .login form p a {
   color: #28a745;
 }
 
-/* End Sign */
-/* Start Money */
-.money {
+/* End LogIn & Sign Up*/
+/* Start Doney */
+.deposit {
   margin-top: 25vh;
 }
 
-.money .card {
+.deposit .card {
   background-color: rgba(0, 0, 0, 1);
   color: #FFF;
-  box-shadow: 12px 9px 3px #CCC
+  box-shadow: 12px 9px 3px #CCC;
+  cursor: pointer;
 }
 
-.money img {
+.deposit img {
   height: 100%;
   padding: 1vmin;
 }
 
-.money h5 {
+.deposit h5 {
   line-height: 2.1;
 }
 
-.money button {
+.deposit button {
   background-color: #ff8100;
   border: 0;
   cursor: pointer;
   width: 60%;
 }
 
-/* End Money */
+/* End Deposit */
 /* Start control */
 .control {
   margin-top: 25vh;
@@ -415,7 +390,7 @@
   top: 0;
   width: 100%;
   min-height: 100%;
-  background-color: rgba(3, 31, 47, 0.6);
+  background-color: rgba(3, 31, 47, 0.8);
 }
 
 .header {
@@ -452,6 +427,52 @@
 
 #scroll-top {
   display: none;
+}
+.modal-content{
+  margin-top: 20vh;
+}
+.modal-content h4{
+  color: #000;
+  padding: 3vh;
+  background: #beccd9;
+  font-size: 5vmin;
+}
+.modal-content h4 span{
+  font-weight: 800;
+}
+.modal-content h4 span.perfect{
+  color: rgb(217 1 1);
+}
+.modal-content h4 span.lite{
+  color: rgb(10, 87, 113);
+}
+.modal-content .modal-body .signup-popup{
+  text-align: start;
+    margin-top: 5vh;
+    display: block;
+}
+.modal-content .modal-body .signup-popup label{
+  font-size: 3vmin;
+  font-weight: 600;
+  color: #0c5460;
+}
+.modal-content .modal-body .signup-popup input{
+  padding: 1vh;
+  outline: none;
+  width: 95%;
+}
+.modal-content .modal-body .signup-popup i{
+  font-size: 4vmin;
+  display: inline-block;
+  width: 2%;
+  color: #103e57;
+}
+.modal-content .modal-body .signup-popup .modal-footer{
+  margin-top: 5vh;
+}
+.modal-content .modal-body .signup-popup .modal-footer a{
+  color: #FFF;
+    background: #28a745;
 }
 /* End FramWork */
 /* Media */
@@ -503,12 +524,12 @@
 
 /* Media */
 @media (max-width: 768px) {
-  .money .card {
+  .deposit .card {
     width: 70%;
     margin: auto;
   }
 
-  .money .card img {
+  .deposit .card img {
     width: 100%;
   }
 }
@@ -553,13 +574,13 @@
     margin-bottom: 0;
   }
 
-  .money,
+  .deposit,
   .control {
     margin-top: 12vh;
 
   }
 
-  .money .card {
+  .deposit .card {
     width: 90%;
   }
 
@@ -574,5 +595,8 @@
   .plans .card ul li {
     margin-bottom: 10vmin;
   }
+  .calculator form select {
+    margin-bottom: 1vh;
+}
 
 }
