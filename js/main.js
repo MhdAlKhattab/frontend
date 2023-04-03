@@ -1,6 +1,10 @@
 $(document).ready(function () {
-    var scrollButton = $("#scroll-top");
-    buyButton = $('#buy')
+
+    'use strict';
+   
+    
+    var scrollButton = $("#scroll-top"),
+        buyButton = $('#buy');
     //////Show The Scroll Top When I Down
 
     $(window).scroll(function () {
@@ -46,5 +50,21 @@ $(document).ready(function () {
         });
 });
 
+// $(window).onload(function () {
+    
+//     "use strict";
+    
+//     // Loading Elements
+    
+//     $(".center,.wave").fadeOut(2000, function () {
+        
+//         // Show The Scroll
 
-
+//         $("body").css("overflow", "auto");
+        
+//         $(this).parent().fadeOut(2000, function () {
+            
+//             $(this).remove();
+//         });
+//     });
+// });
