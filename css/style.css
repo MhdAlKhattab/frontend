@@ -395,7 +395,7 @@ body{
 }
 
 /* End LogIn & Sign Up*/
-/* Start Doney */
+/* Start Deposit & Withdraw*/
 .deposit {
   margin-top: 25vh;
 }
@@ -411,22 +411,44 @@ body{
   height: 100%;
   padding: 1vmin;
 }
-
 .deposit h5 {
   line-height: 2.1;
 }
 
-.deposit button {
+.deposit a {
   background-color: #466795;
   border: 0;
   cursor: pointer;
   width: 60%;
+  color: #FFF;
+  font-weight: 600;
 }
 
-/* End Deposit */
+/* End Deposit & Withdraw*/
+/* Start DepositerDetails */
+.details{
+  background-image: url('../image/sky.jpg');
+  min-height: 100vh;
+  background-size: cover;
+  padding-top: 15vh;
+}
+.details .card{
+  width: 60%;
+  margin: auto;
+  padding: 3vh;
+  box-shadow: 10px 10px 10px #151515;
+  background: #000;
+  font-size: 3vmin;
+  color: aliceblue;
+}
+.details .card span{
+  color: #28a745;
+  font-weight: 800;
+}
+/* End DepositerDetails */
 /* Start control */
 .control {
-  margin-top: 25vh;
+  margin-top: 20vh;
 }
 .control h3~p{
   border: 1px solid #373737;
@@ -460,11 +482,11 @@ body{
   position: absolute;
   top: 2vmin;
   right: 2vmin;
-  border: 1px solid #000;
+  border: 1px solid #0c5460;
   padding: 2vmin;
-  color: #fff;
-  background: #000;
-  border-radius: 5px
+  color: #0c5460;
+  background: #fff;
+  border-radius: 5px;
 }
 .control .control-table{
   overflow-x:auto
@@ -474,6 +496,10 @@ body{
   border-spacing: 0;
   width: 100%;
   border: 1px solid #ddd;
+}
+.control  th{
+  color: #103e57;
+  font-size: 3vmin;
 }
 .control  th, td {
   text-align: left;
