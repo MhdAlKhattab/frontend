@@ -7,9 +7,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="css/bootstrap.min.css">
   <link rel="stylesheet" href="css/font-awesome.min.css">
+  <link rel="stylesheet" href="css/style-control.css">
   <link rel="stylesheet" href="css/style.css">
+
   <title>Setrex</title>
 </head>
+
 <body>
   <!-- Start Navbar -->
   <nav class=" navbar navbar-expand-lg navbar-light">
@@ -43,11 +46,11 @@
   </nav>
   <!-- End Navbar -->
   <!--Start Investment-->
-  <div class="plans padding-botton">
+  <div class="investments plans padding-botton">
     <div class="container">
       <h1 class="text-center header padding-top">Investment Plans Available</h1>
-      <div class="row Plan">
-        <div class="card text-center wow fadeInUp" data-wow-duration="1s" data-wow-offset="400">
+      <div class="row investment Plan">
+        <div class="card text-center" type="button" class="btn btn-primary" data-toggle="modal" data-target=".modal1">
           <h4 class="card-header">
             Monthly Islamic Plan
           </h4>
@@ -60,7 +63,7 @@
           <button class="btn btn-success  ">Invest</button>
 
         </div>
-        <div class="card text-center wow fadeInDown" data-wow-duration="1s" data-wow-offset="400">
+        <div class="card text-center" type="button" class="btn btn-primary" data-toggle="modal" data-target=".modal2">
           <h4 class="card-header">
             Monthly Silver Plan
           </h4>
@@ -72,7 +75,7 @@
           <p>100 Dollares - 10 Dollares</p>
           <button class="btn btn-success  ">Invest</button>
         </div>
-        <div class="card text-center wow fadeInUp" data-wow-duration="1s" data-wow-offset="400">
+        <div class="card text-center" type="button" class="btn btn-primary" data-toggle="modal" data-target=".modal3">
           <h4 class="card-header">
             Monthly Gold Plan
           </h4>
@@ -84,7 +87,7 @@
           <p>1000 Dollares - 10 Dollares</p>
           <button class="btn btn-success  ">Invest</button>
         </div>
-        <div class="card text-center wow fadeInDown" data-wow-duration="1s" data-wow-offset="400">
+        <div class="card text-center" type="button" class="btn btn-primary" data-toggle="modal" data-target=".modal4">
           <h4 class="card-header">
             Monthly Diamond Plan
           </h4>
@@ -100,6 +103,166 @@
     </div>
   </div>
   <!--End Investment-->
+  <!-- Modal 1-->
+  <div class="modal fade modal1" id="modal1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <h4 class="head"> Monthly Islamic Plan</h4>
+        <div class="modal-body">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+              aria-hidden="true">&times;</span></button>
+          <div class="text-center">
+            <p class="">Investment 10$ No Limits</p>
+            <p class="">Benefit 18%</p>
+            <p class="">For 164 Days 24 Once</p>
+          </div>
+          <div class="row">
+            <div class="col-sm-12 text-center col-xs-height">
+              <form class="signup-popup">
+                <label class="btn-block">Enter The Waste:</label>
+                <div class="col-xs-12">
+                  <select>
+                    <option>Monthly Islamic Plan</option>
+                    <option> Monthly Diamond Plan</option>
+                    <option>Monthly Gold Plan</option>
+                    <option>Monthly Selver Plan</option>
+                  </select>
+                </div> <label class="btn-block">Enter The Amount:</label>
+                <input class="col-xs-12 " type="text" name="" required>
+                <div class="modal-footer">
+                  <button type="submit" class="btn btn-success">Next</button>
+                  <button class="btn btn-danger" data-dismiss="modal">Close</button>
+                </div>
+              </form>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+  <!--Modal 2-->
+  <div class="modal fade modal2" id="modal2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <h4 class="head">Monthly Silver Plan</h4>
+        <div class="modal-body">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+              aria-hidden="true">&times;</span></button>
+          <div class="text-center">
+            <p class="">Investment 10$ No Limits</p>
+            <p class="">Benefit 18%</p>
+            <p class="">For 164 Days 24 Once</p>
+          </div>
+          <div class="row">
+            <div class="col-sm-12 text-center col-xs-height">
+              <form class="signup-popup">
+                <label class="btn-block">Enter The Waste:</label>
+                <div class="col-xs-12">
+                  <select>
+                    <option>Monthly Islamic Plan</option>
+                    <option> Monthly Diamond Plan</option>
+                    <option>Monthly Gold Plan</option>
+                    <option>Monthly Selver Plan</option>
+                  </select>
+                </div> <label class="btn-block">Enter The Amount:</label>
+                <input class="col-xs-12 " type="text" name="" required>
+                <div class="modal-footer">
+                  <button type="submit" class="btn btn-success">Next</button>
+                  <button class="btn btn-danger" data-dismiss="modal">Close</button>
+                </div>
+              </form>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!--Modal 3-->
+  <div class="modal fade modal3" id="modal3" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <h4 class="head">Monthly Gold Plan</h4>
+        <div class="modal-body">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+              aria-hidden="true">&times;</span></button>
+          <div class="text-center">
+            <p class="">Investment 10$ No Limits</p>
+            <p class="">Benefit 18%</p>
+            <p class="">For 164 Days 24 Once</p>
+          </div>
+          <div class="row">
+            <div class="col-sm-12 text-center col-xs-height">
+              <form class="signup-popup">
+                <label class="btn-block">Enter The Waste:</label>
+                <div class="col-xs-12">
+                  <select>
+                    <option>Monthly Islamic Plan</option>
+                    <option> Monthly Diamond Plan</option>
+                    <option>Monthly Gold Plan</option>
+                    <option>Monthly Selver Plan</option>
+                  </select>
+                </div> <label class="btn-block">Enter The Amount:</label>
+                <input class="col-xs-12 " type="text" name="" required>
+                <div class="modal-footer">
+                  <button type="submit" class="btn btn-success">Next</button>
+                  <button class="btn btn-danger" data-dismiss="modal">Close</button>
+                </div>
+              </form>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!--Modal 4-->
+  <div class="modal fade modal4" id="modal4" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <h4 class="head">Monthly Dimaond Plan</h4>
+        <div class="modal-body">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+              aria-hidden="true">&times;</span></button>
+          <div class="text-center">
+            <p class="">Investment 10$ No Limits</p>
+            <p class="">Benefit 18%</p>
+            <p class="">For 164 Days 24 Once</p>
+          </div>
+          <div class="row">
+            <div class="col-sm-12 text-center col-xs-height">
+              <form class="signup-popup">
+                <label class="btn-block">Enter The Waste:</label>
+                <div class="col-xs-12">
+                  <select>
+                    <option>Monthly Islamic Plan</option>
+                    <option> Monthly Diamond Plan</option>
+                    <option>Monthly Gold Plan</option>
+                    <option>Monthly Selver Plan</option>
+                  </select>
+                </div> <label class="btn-block">Enter The Amount:</label>
+                <input class="col-xs-12 " type="text" name="" required>
+                <div class="modal-footer">
+                  <button type="submit" class="btn btn-success">Next</button>
+                  <button class="btn btn-danger" data-dismiss="modal">Close</button>
+                </div>
+              </form>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
 
   <script src="js/jq.js"></script>
   <script src="js/popper.min.js"></script>
