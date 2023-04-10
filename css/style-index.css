@@ -80,7 +80,7 @@
   /* End Home */
   /* Start About Us */
   .about-us {
-    background-image: url('../image/aboutUs.png');
+    background-image: url('../image/Background\ 2.jpg');
     background-size: cover;
     min-height: 100vh;
     color: #b6b6b6;
@@ -95,7 +95,7 @@
   /* End About Us */
   /* Start plan */
   .plans {
-    background-image: url('../image/plans.jpg');
+    background-image: url('../image/l.jpg');
     background-size: cover;
     background-attachment: fixed;
     min-height: 100vh;
@@ -131,13 +131,14 @@
   
   }
   
-  .plans .card button {
+  .plans .card a {
     position: absolute;
     bottom: 2vmin;
     width: 50%;
     right: 50%;
     justify-content: center;
     left: 25%;
+    color: #FFF;
   }
   
   /* End Plan */
@@ -180,7 +181,7 @@
   /* End Note */
   /* Start Calculator */
   .calculator {
-    background-image: url('../image/calculater.jpg');
+    background-image: url('../image/Forex\ Back3.jpg');
     background-size: cover;
     min-height: 100vh;
     color: #FFF;
@@ -228,7 +229,9 @@
   /* End Calculator */
   /* Start Contact Us */
   .contact-us{
-    margin-top: 20vh;
+    padding-top: 20vh;
+    background-image: url('../image/l.jpg');
+    min-height: 100vh;
   }
   .contact-us input{
     margin-bottom: 4vh;
@@ -264,7 +267,7 @@
   
   /* Start LogIn & Sign Up*/
   .login {
-    background-image: url('../image/login&sign.png');
+    background-image: url('../image/l.jpg');
     background-size: cover;
     min-height: 100vh;
   }

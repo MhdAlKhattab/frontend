@@ -14,7 +14,6 @@ body{
 
 .navbar {
   background-color: #010810;
-  overflow: hidden;
   position: fixed;
   top: 0;
   width: 100%;
@@ -23,7 +22,7 @@ body{
 }
 
 .navbar .navbar-brand img {
-  width: 20vmin;
+  width: 25vmin;
   margin-right: 2vmin;
 }
 
@@ -61,6 +60,12 @@ body{
   border-radius: 5px;
   cursor: pointer;
 }
+.dropdown-menu {background-color:#466795;min-width:200px;}
+.dropdown-menu > li > a {color:#FFF;padding:6px 20px;transition: .5s;}
+
+.dropdown-menu > li > a:hover,
+
+.dropdown-menu > li > a:focus {color:#FFF;padding-left:25px;text-decoration: none;}
 
 /* End Navbar */
 
@@ -78,11 +83,11 @@ body{
 .header {
   margin-bottom: 5vh;
   color: #466795;
-  font-size: 8vmin;
+  font-size: 6vmin;
 }
 
 .padding-top {
-  padding-top: 15vh;
+  padding-top: 20vh;
 }
 
 .padding-botton {

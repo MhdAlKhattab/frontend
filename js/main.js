@@ -59,7 +59,7 @@ $(document).ready(function () {
     
         });
         ///////////Input File To Show An Image I Chosse It
-        const input = document.querySelector('input');
+        const input = document.getElementById('image_uploads');
         const preview = document.querySelector('.preview');
     
         input.addEventListener('change', updateImageDisplay);
@@ -99,6 +99,7 @@ $(document).ready(function () {
       function validFileType(file) {
         return fileTypes.includes(file.type);
       }
+      
 });
 
 // $(window).onload(function () {

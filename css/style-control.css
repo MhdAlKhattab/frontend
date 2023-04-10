@@ -1,12 +1,14 @@
 /* Start Deposit & Withdraw*/
 .deposit {
-    margin-top: 25vh;
+    background-image: url('../image/sky.jpg');
+    min-height: 100vh;
+    background-size: cover;
 }
 
 .deposit .card {
     background-color: rgba(0, 0, 0, 1);
     color: #FFF;
-    box-shadow: 12px 9px 3px #CCC;
+    box-shadow: 5px 5px 8px #272727;
     cursor: pointer;
 }
 
@@ -19,13 +21,13 @@
     line-height: 2.1;
 }
 
-.deposit a {
+.deposit h5~a {
     background-color: #466795;
     border: 0;
     cursor: pointer;
-    width: 60%;
     color: #FFF;
     font-weight: 600;
+    width: 60%;
 }
 
 /* End Deposit & Withdraw*/
@@ -34,7 +36,6 @@
     background-image: url('../image/sky.jpg');
     min-height: 100vh;
     background-size: cover;
-    padding-top: 15vh;
 }
 
 .details .card {
@@ -92,15 +93,16 @@
 /* End DepositerDetails */
 /* Start control */
 .control {
-    margin-top: 20vh;
+    background-image: url('../image/sky.jpg');
+    min-height: 100vh;
+    background-size: cover;
 }
 
 .control h3~p {
     border: 1px solid #373737;
-    padding: 1vh 2vh;
+    padding: 2vh;
     border-radius: 5px;
     color: #FFF;
-    background: #7a7875;
     position: relative;
 }
 
@@ -108,7 +110,7 @@
     position: absolute;
     right: 2vh;
     font-size: 3vmin;
-    color: #000;
+    color: #004085;
     cursor: pointer;
 }
 
@@ -116,9 +118,11 @@
     position: relative;
     padding: 2vmin 4vmin;
     background-color: #466795;
-    box-shadow: 5px 5px 8px #666565;
+    box-shadow: 5px 5px 8px #272727;
     border-radius: 5px;
     margin-bottom: 5vh;
+    background-color: #000;
+    color: #ddd;
 }
 
 .control .control-ba h2 {
@@ -129,44 +133,45 @@
     position: absolute;
     top: 2vmin;
     right: 2vmin;
-    border: 1px solid #0c5460;
+    border: 1px solid #2e4664;
     padding: 2vmin;
-    color: #0c5460;
-    background: #fff;
+    color: #FFF;
+    background: #2e4664;
     border-radius: 5px;
 }
 
-.control .control-table {
-    overflow-x: auto
+ .control-table {
+    overflow-x: auto;
 }
 
-.control table {
+ table {
     border-collapse: collapse;
     border-spacing: 0;
     width: 100%;
     border: 1px solid #ddd;
 }
 
-.control th {
+ th {
     color: #103e57;
     font-size: 3vmin;
 }
 
-.control th,
+ th,
 td {
     text-align: left;
     padding: 8px;
+    color: #317c42;
+    font-weight: 500;
 }
-
-.control tr:nth-child(even) {
-    background-color: #f2f2f2
+ th{
+    color: white;
+    font-weight: 700;
 }
-
 
 /* End Control */
-/* Start plan */
+/* Start investments */
 .investments {
-    background-image: url('../image/plans.jpg');
+    background-image: url('../image/l.jpg');
     background-size: cover;
     background-attachment: fixed;
     min-height: 100vh;
@@ -210,12 +215,66 @@ td {
     justify-content: center;
     left: 25%;
 }
-
+/* End Investments*/
+/* Start History */
+.history{
+    background-image: url('../image/sky.jpg');
+    height: 100vh;
+    background-size: cover;
+}
+/* End History */
 .modal-content h4.head{
     color: #103e57;
 }
-
-/* End Plan */
+/* Start Withdraw History */
+.withdraw-bottom{
+    display: block;
+    padding: 1vh;
+    width: 20%;
+    color: #FFF;
+    border-radius: 5px;
+    text-align: center;
+    margin-bottom: 3vh;
+    text-decoration: none;
+    background-color: #466795;
+}
+.withdraw-bottom:hover{
+    color: #FFF;
+}
+.withdraw-now{
+    background-image: url('../image/sky.jpg');
+    height: 100vh;
+    background-size: cover;
+}
+.withdraw-now .withdraw-table{
+    width: 50%;
+    margin: 0 auto;
+    padding: 2vh 2vh 0;
+    background-color: #333437;
+    color: #FFF;
+}
+.withdraw-now .withdraw-table .col-6{
+    border-bottom: 1px solid #CCC;
+    padding-top: 1vh;
+}
+.withdraw-now .withdraw-table button{
+    margin-bottom: 1vh;
+    background-color: #fff900;
+    color: #FFF
+}
+.withdraw-now .withdraw-table span{
+    color: #28a745;
+    font-weight: 700;
+}
+.withdraw-now .withdraw-table i{
+    padding: 1vh;
+    background: #6666a7;
+    border-radius: 3px;
+}
+.colo{
+    color: #ffe4c4;
+}
+/* End Withdraw History */
 /* Start Modal */
 .modal-content {
     margin-top: 15vh;
