@@ -1,13 +1,13 @@
 $(document).ready(function () {
 
     'use strict';
-   
     
     var scrollButton = $("#scroll-top"),
         buyButton = $('#buy'),
         amount = document.getElementsByClassName('amount-input');
     // document.getElementById('show-money').innerHTML=document.getElementById('money').value;    
     //////Show The Scroll Top When I Down
+
 
     $(window).scroll(function () {
 

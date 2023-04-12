@@ -80,7 +80,7 @@
   /* End Home */
   /* Start About Us */
   .about-us {
-    background-image: url('../image/Background\ 2.jpg');
+    background-image: url('../image/aboutUs.png');
     background-size: cover;
     min-height: 100vh;
     color: #b6b6b6;
@@ -95,7 +95,7 @@
   /* End About Us */
   /* Start plan */
   .plans {
-    background-image: url('../image/l.jpg');
+    background-image: url('../image/cell.png');
     background-size: cover;
     background-attachment: fixed;
     min-height: 100vh;
@@ -181,7 +181,7 @@
   /* End Note */
   /* Start Calculator */
   .calculator {
-    background-image: url('../image/Forex\ Back3.jpg');
+    background-image: url('../image/calculater.jpg');
     background-size: cover;
     min-height: 100vh;
     color: #FFF;
@@ -212,7 +212,7 @@
   }
   
   .calculator form input::placeholder {
-    color: #FFF;
+    color: #CCC;
     font-size: 3vmin;
     font-weight: 500;
   }
@@ -221,7 +221,7 @@
     padding: 5px;
     font-size: 3vmin;
     font-weight: 500;
-    color: #FFF;
+    color: #ccc;
     margin-bottom: 5vh;
     background-color: #0c5460;
   }
@@ -229,7 +229,6 @@
   /* End Calculator */
   /* Start Contact Us */
   .contact-us{
-    padding-top: 20vh;
     background-image: url('../image/l.jpg');
     min-height: 100vh;
   }
@@ -267,7 +266,7 @@
   
   /* Start LogIn & Sign Up*/
   .login {
-    background-image: url('../image/l.jpg');
+    background-image: url('../image/login&sign.jpg');
     background-size: cover;
     min-height: 100vh;
   }
@@ -278,10 +277,9 @@
     border: 1px solid #CCC;
     border-radius: 5px;
     background: white;
-    margin-top: 20vh;
   }
-  .sign form{
-    margin-top: 10vh;
+  .sign .overlay{
+    padding-top: 8vh;
   }
   
   .login form .log-header {
@@ -313,9 +311,7 @@
     padding: 3vh;
   }
   .login form .log-footer {
-    margin: 0;
     margin-top: 5vh;
-    position: relative;
   }
   .login form .log-footer button{
     width: 50%;

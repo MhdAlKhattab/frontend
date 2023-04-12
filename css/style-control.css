@@ -1,3 +1,127 @@
+/* Start control */
+.control {
+    background-image: url('../image/sky2.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    min-height: 100vh;
+    padding-bottom: 5vh;
+}
+
+.control h3~p {
+    border: 1px solid #373737;
+    padding: 2vh;
+    border-radius: 5px;
+    position: relative;
+}
+
+.control p i {
+    position: absolute;
+    right: 2vh;
+    font-size: 3vmin;
+    color: #004085;
+    cursor: pointer;
+}
+
+.control .control-ba {
+    position: relative;
+    padding: 2vmin 4vmin;
+    background-color: #466795;
+    box-shadow: 5px 5px 8px #272727;
+    border-radius: 5px;
+    margin-bottom: 5vh;
+    background-color: #FFF;
+}
+
+
+.control .control-ba i {
+    position: absolute;
+    top: 2vmin;
+    right: 2vmin;
+    border: 1px solid #2e4664;
+    padding: 2vmin;
+    color: #FFF;
+    background: #2e4664;
+    border-radius: 5px;
+}
+
+ .control-table {
+    overflow-x: auto;
+    background: #466795;
+}
+
+ table {
+    border-collapse: collapse;
+    border-spacing: 0;
+    width: 100%;
+    border: 1px solid #ddd;
+}
+
+ th {
+    color: #103e57;
+    font-size: 3vmin;
+}
+
+ th,
+td {
+    text-align: left;
+    padding: 10px;
+    font-weight: 500;
+}
+ th{
+    color: white;
+    font-weight: 700;
+}
+
+/* End Control */
+
+/* Start investments */
+.investments {
+    background-image: url('../image/cell.png');
+    background-size: cover;
+    background-attachment: fixed;
+    min-height: 100vh;
+}
+
+.investments .row {
+    justify-content: space-between;
+}
+
+.investments .card {
+    width: 22%;
+    background-color: rgba(0, 14, 27, .8);
+    color: #CCC;
+    border: 1px solid #103e57;
+    padding: 5vmin;
+    position: relative;
+    transition: .5s;
+    cursor: pointer;
+}
+
+.investments .card .card-header {
+    color: #7ba6e2;
+    margin-bottom: 2vmin;
+}
+
+.investments .card ul li {
+    border-bottom: 1px solid #CCC;
+    margin-bottom: 4vmin;
+}
+
+.investments .card p {
+    margin-bottom: 5vmin;
+
+}
+
+.investments .card button {
+    position: absolute;
+    bottom: 2vmin;
+    width: 50%;
+    right: 50%;
+    justify-content: center;
+    left: 25%;
+}
+/* End Investments*/
+
 /* Start Deposit & Withdraw*/
 .deposit {
     background-image: url('../image/sky.jpg');
@@ -31,7 +155,7 @@
 }
 
 /* End Deposit & Withdraw*/
-/* Start DepositerDetails */
+/* Start Deposit Details & Withdraw Details */
 .details {
     background-image: url('../image/sky.jpg');
     min-height: 100vh;
@@ -90,147 +214,16 @@
     display: none;
 }
 
-/* End DepositerDetails */
-/* Start control */
-.control {
-    background-image: url('../image/sky.jpg');
-    min-height: 100vh;
-    background-size: cover;
-}
+/* End DepositerDetails & Withdraw Details */
 
-.control h3~p {
-    border: 1px solid #373737;
-    padding: 2vh;
-    border-radius: 5px;
-    color: #FFF;
-    position: relative;
-}
-
-.control p i {
-    position: absolute;
-    right: 2vh;
-    font-size: 3vmin;
-    color: #004085;
-    cursor: pointer;
-}
-
-.control .control-ba {
-    position: relative;
-    padding: 2vmin 4vmin;
-    background-color: #466795;
-    box-shadow: 5px 5px 8px #272727;
-    border-radius: 5px;
-    margin-bottom: 5vh;
-    background-color: #000;
-    color: #ddd;
-}
-
-.control .control-ba h2 {
-    color: #FFF;
-}
-
-.control .control-ba i {
-    position: absolute;
-    top: 2vmin;
-    right: 2vmin;
-    border: 1px solid #2e4664;
-    padding: 2vmin;
-    color: #FFF;
-    background: #2e4664;
-    border-radius: 5px;
-}
-
- .control-table {
-    overflow-x: auto;
-}
-
- table {
-    border-collapse: collapse;
-    border-spacing: 0;
-    width: 100%;
-    border: 1px solid #ddd;
-}
-
- th {
-    color: #103e57;
-    font-size: 3vmin;
-}
-
- th,
-td {
-    text-align: left;
-    padding: 8px;
-    color: #317c42;
-    font-weight: 500;
-}
- th{
-    color: white;
-    font-weight: 700;
-}
-
-/* End Control */
-/* Start investments */
-.investments {
-    background-image: url('../image/l.jpg');
-    background-size: cover;
-    background-attachment: fixed;
-    min-height: 100vh;
-}
-
-.investments .row {
-    justify-content: space-between;
-}
-
-.investments .card {
-    width: 22%;
-    background-color: rgba(0, 14, 27, .8);
-    color: #CCC;
-    border: 1px solid #103e57;
-    padding: 5vmin;
-    position: relative;
-    transition: .5s;
-    cursor: pointer;
-}
-
-.investments .card .card-header {
-    color: #7ba6e2;
-    margin-bottom: 2vmin;
-}
-
-.investments .card ul li {
-    border-bottom: 1px solid #CCC;
-    margin-bottom: 4vmin;
-}
-
-.investments .card p {
-    margin-bottom: 5vmin;
-
-}
-
-.investments .card button {
-    position: absolute;
-    bottom: 2vmin;
-    width: 50%;
-    right: 50%;
-    justify-content: center;
-    left: 25%;
-}
-/* End Investments*/
-/* Start History */
+/* Start  History */
 .history{
     background-image: url('../image/sky.jpg');
     height: 100vh;
     background-size: cover;
 }
-/* End History */
-.modal-content h4.head{
-    color: #103e57;
-}
-/* Start Withdraw History */
-.withdraw-bottom{
-    display: block;
+.history-button{
     padding: 1vh;
-    width: 20%;
     color: #FFF;
     border-radius: 5px;
     text-align: center;
@@ -238,44 +231,59 @@ td {
     text-decoration: none;
     background-color: #466795;
 }
-.withdraw-bottom:hover{
+.history-button:hover{
     color: #FFF;
 }
-.withdraw-now{
-    background-image: url('../image/sky.jpg');
-    height: 100vh;
+.history .control-table p{
+    margin: 0;
+}
+.history .control-table span{
+    color: #e80303;
+    font-weight: 600;
+}
+.history .control-table i{
+    color: #ffc107;
+}
+/* End  History */
+/* Start Account */
+  .login {
+    background-image: url('../image/login&sign.jpg');
     background-size: cover;
-}
-.withdraw-now .withdraw-table{
-    width: 50%;
+    min-height: 100vh;
+  }
+  
+  .login form {
+    width: 30%;
     margin: 0 auto;
-    padding: 2vh 2vh 0;
-    background-color: #333437;
-    color: #FFF;
-}
-.withdraw-now .withdraw-table .col-6{
-    border-bottom: 1px solid #CCC;
-    padding-top: 1vh;
-}
-.withdraw-now .withdraw-table button{
-    margin-bottom: 1vh;
-    background-color: #fff900;
-    color: #FFF
-}
-.withdraw-now .withdraw-table span{
-    color: #28a745;
-    font-weight: 700;
-}
-.withdraw-now .withdraw-table i{
-    padding: 1vh;
-    background: #6666a7;
-    border-radius: 3px;
-}
-.colo{
-    color: #ffe4c4;
-}
-/* End Withdraw History */
+    border: 1px solid #CCC;
+    border-radius: 5px;
+    background: white;
+  }
+  .login form .log-header {
+    padding: 4vh 0;
+    background-color: aliceblue;
+    font-weight: 600;
+  }
+  
+  
+  .login form input {
+    border: 0;
+    border-bottom: 1px solid #c5ccd3;
+    width: 90%;
+    border-radius: 0;
+    margin: 0 auto;
+    padding: 3vh;
+  }
+
+  .login form .log-footer button{
+    width: 100%;
+  }
+  
+/* End Account */
 /* Start Modal */
+.modal-content h4.head{
+    color: #103e57;
+}
 .modal-content {
     margin-top: 15vh;
 }

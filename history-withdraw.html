@@ -36,16 +36,15 @@
                     <li class="nav-item" id="plans">
                         <a class="nav-link" href="deposit.html">Deposit</a>
                     </li>
-                    <li class="nav-item" id="note">
+                    <li class="nav-item active" id="note">
                         <a class="nav-link" href="withdraw.html">Withdraw</a>
                     </li>
-                    <li class="dropdown active nav-item">
-                        <a href="#" class="dropdown-toggle nav-link" data-toggle="dropdown">History Withdraw<span
-                                class="caret"></span></a>
+                    <li class="dropdown nav-item">
+                        <a href="#" class="dropdown-toggle nav-link" data-toggle="dropdown">Account <span class="caret"></span></a>
                         <ul class="dropdown-menu" role="menu">
-                            <li><a href="control.html">History </a></li>
-                            <li><a href="history-depositer.html">History Deposit</a></li>
-                    </li>
+                          <li><a href="#">Cheak Out</a></li>
+                          <li><a href="account.html">Change Password</a></li>
+                      </li>
                 </ul>
             </div>
 
@@ -56,46 +55,76 @@
 
 
     <div class="history padding-top">
-        <h3 class="header text-center">History Withdraw:</h3>
-        <div class="control-table ">
-            <table>
-                <tr>
-                    <th>First Name</th>
-                    <th>Last Name</th>
-                    <th>Points</th>
-                    <th>Points</th>
-                    <th>Points</th>
-                    <th>Points</th>
-                </tr>
-                <tr>
-                    <td>Jill</td>
-                    <td>Smith</td>
-                    <td>50</td>
-                    <td>50</td>
-                    <td>50</td>
-                    <td>50</td>
-                </tr>
-                <tr>
-                    <td>Eve</td>
-                    <td>Jackson</td>
-                    <td>94</td>
-                    <td>94</td>
-                    <td>94</td>
-                    <td>94</td>
-                </tr>
-                <tr>
-                    <td>Adam</td>
-                    <td>Johnson</td>
-                    <td>67</td>
-                    <td>67</td>
-                    <td>67</td>
-                    <td>67</td>
-                </tr>
-            </table>
+        <div class="container">
+            <a href="withdraw.html" class="history-button btn">Withdraw Now</a>
+            <h3 class="header text-center">History Withdraw:</h3>
+            <div class="control-table ">
+                <table>
+                    <tr style="background-color: black;">
+                        <th>Amount</th>
+                        <th>Rate</th>
+                        <th>Charge</th>
+                        <th>Recervable</th>
+                        <th>Status</th>
+                        <th>More</th>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p>16 USD</p>
+                            <p>Via Perfect Money</p>
+                        </td>
+                        <td>
+                            <p>1 USD = USD</p>
+                            <p>16 USD = 16 USD</p>
+                        </td>
+                        <td>
+                            <p>0.34 USD</p>
+                            <p>Or 4.97 USD</p>
+                        </td>
+                        
+                        <td><span>456 USD</span></td>
+                        <td><button class="btn btn-success">Complete</button></td>
+                        <td><i class="fa fa-list"></i></td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p>89 USD</p>
+                            <p>Via Perfect Money</p>
+                        </td>
+                        <td>
+                            <p>1 USD = USD</p>
+                            <p>16 USD = 16 USD</p>
+                        </td>
+                        <td>
+                            <p>0.34 USD</p>
+                            <p>Or 4.97 USD</p>
+                        </td>
+                        <td><span>456 USD</span></td>
+                        <td><button class="btn btn-success">Complete</button></td>
+                        <td><i class="fa fa-list"></i></td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p>9 USD</p>
+                            <p>Via Perfect Money</p>
+                        </td>
+                        
+                        <td>
+                            <p>1 USD = USD</p>
+                            <p>16 USD = 16 USD</p>
+                        </td>
+                        <td>
+                            <p>0.34 USD</p>
+                            <p>Or 4.97 USD</p>
+                        </td>
+                        <td><span>456 USD</span></td>
+                        <td><button class="btn btn-success">Complete</button></td>
+                        <td><i class="fa fa-list"></i></td>
+                    </tr>
+                </table>
+            </div>
+    
         </div>
-
-
-
     </div>
 
     
