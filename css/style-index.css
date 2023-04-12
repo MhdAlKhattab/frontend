@@ -1,7 +1,10 @@
 
   /* Loading */
   .center {
-    height: 100vh;
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    z-index: 99999;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -58,7 +61,7 @@
 
   /* Start Home */
   .home {
-    background-image: url('../image/notes.png');
+    background-image: url('../image/home.png');
     background-size: cover;
     min-height: 100vh;
   }
@@ -80,10 +83,13 @@
   /* End Home */
   /* Start About Us */
   .about-us {
-    background-image: url('../image/aboutUs.png');
-    background-size: cover;
+    background-image: url('../image/about-us.png');
+    background-size: 100%;
     min-height: 100vh;
     color: #b6b6b6;
+    position: relative;
+  }
+  .about-us .overlay{
     padding-top: 30vh;
   }
   
@@ -102,7 +108,7 @@
   }
   
   .plans .row {
-    justify-content: space-between;
+    justify-content: space-around;
   }
   
   .plans .card {

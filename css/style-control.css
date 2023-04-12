@@ -83,7 +83,7 @@ td {
 }
 
 .investments .row {
-    justify-content: space-between;
+    justify-content: space-around;
 }
 
 .investments .card {
@@ -94,7 +94,6 @@ td {
     padding: 5vmin;
     position: relative;
     transition: .5s;
-    cursor: pointer;
 }
 
 .investments .card .card-header {
@@ -133,7 +132,6 @@ td {
     background-color: rgba(0, 0, 0, 1);
     color: #FFF;
     box-shadow: 5px 5px 8px #272727;
-    cursor: pointer;
 }
 
 .deposit img {
@@ -183,6 +181,7 @@ td {
     width: 80%;
     background: transparent;
     border: 1px solid #797979;
+    color: #FFF;
 }
 
 .details .card .waste {
@@ -338,7 +337,7 @@ td {
     margin-top: 5vh;
 }
 
-.modal-content .modal-body .signup-popup .modal-footer a {
+.modal-content .modal-body .signup-popup .modal-footer :first-child {
     color: #FFF;
     background: #28a745;
 }
