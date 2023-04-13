@@ -12,6 +12,7 @@
     padding: 2vh;
     border-radius: 5px;
     position: relative;
+    color: #FFF;
 }
 
 .control p i {
@@ -43,6 +44,20 @@
     background: #2e4664;
     border-radius: 5px;
 }
+.con-history{
+    color: #FFF;
+    background: #466795;
+    display: inline-block;
+    margin-bottom: 3vh;
+    padding: 1vmin;
+    cursor: pointer;
+    margin-right: 5vh;
+    border-radius: 5px;
+}
+.con-history:hover{
+    text-decoration: none;
+    color: #FFF;
+}
 
  .control-table {
     overflow-x: auto;
@@ -71,6 +86,7 @@ td {
     color: white;
     font-weight: 700;
 }
+
 
 /* End Control */
 
@@ -137,6 +153,7 @@ td {
 .deposit img {
     height: 100%;
     padding: 1vmin;
+    border-radius: 35px;
 }
 
 .deposit h5 {
@@ -218,7 +235,7 @@ td {
 /* Start  History */
 .history{
     background-image: url('../image/sky.jpg');
-    height: 100vh;
+    min-height: 100vh;
     background-size: cover;
 }
 .history-button{
@@ -233,15 +250,31 @@ td {
 .history-button:hover{
     color: #FFF;
 }
-.history .control-table p{
+ .control-table p{
     margin: 0;
 }
-.history .control-table span{
-    color: #e80303;
+ .control-table span{
+    color: #fff8f8;
     font-weight: 600;
 }
-.history .control-table i{
+ .control-table i{
     color: #ffc107;
+}
+.control-table h5{
+    line-height: 2;
+    font-size: 2vmin;
+}
+.status{
+    color: #FFF !important;
+    background: #28a745;
+    text-align: center;
+    /* border-radius: 0px; */
+}
+.Panding{
+    color: #FFF !important;
+    background: #ddd91a;
+    border-radius: 5px;
+    text-align: center;
 }
 /* End  History */
 /* Start Account */

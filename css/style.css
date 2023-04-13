@@ -60,7 +60,7 @@ body{
   border-radius: 5px;
   cursor: pointer;
 }
-.dropdown-menu {background-color:#466795;min-width:200px;}
+.dropdown-menu {background-color:#466795;min-width:200px;width: 30%;}
 .dropdown-menu > li > a {color:#FFF;padding:6px 20px;transition: .5s;}
 
 .dropdown-menu > li > a:hover,
@@ -71,6 +71,9 @@ body{
 
 
 /* Start FramWork */
+.progress-bar{
+  background-color: #28a745;
+}
 .overlay {
   position: absolute;
   left: 0;

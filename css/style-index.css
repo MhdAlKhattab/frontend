@@ -118,9 +118,13 @@
     border: 1px solid #103e57;
     padding: 5vmin;
     position: relative;
-    transition: .5s;
-    cursor: pointer;
+    transition: .8s;
   }
+  .plans .card:hover {
+    width: 24%;
+    padding: 6vmin;
+  }
+
   
   .plans .card .card-header {
     color: #7ba6e2;
