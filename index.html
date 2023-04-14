@@ -230,18 +230,18 @@
       <form>
         <div class="row">
           <div class="col-md-6 col-sm-12">
-            <select>
-              <option>Monthly Islamic Plan</option>
-              <option> Monthly Diamond Plan</option>
-              <option>Monthly Gold Plan</option>
-              <option>Monthly Selver Plan</option>
+            <select id="selectcal">
+              <option value="10">Monthly Islamic Plan</option>
+              <option value="20"> Monthly Diamond Plan</option>
+              <option value="30">Monthly Gold Plan</option>
+              <option value="40">Monthly Selver Plan</option>
             </select>
           </div>
-          <div class="col-md-6 col-sm-12">
+          <div class="col-md-6 col-sm-12" id="inputcal">
             <input type="text" placeholder="Investment Amount">
           </div>
-          <div class="col-12">
-            <input type="text" placeholder="Investment Amount">
+          <div class="col-12" id="resultcal">
+            <input type="text" placeholder="Investment Amount" disabled>
           </div>
         </div>
       </form>

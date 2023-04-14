@@ -192,6 +192,9 @@ body{
     width: 70%;
     margin: auto;
   }
+  table {
+    width: 150%;
+  }
 
 }
 
@@ -238,6 +241,12 @@ body{
   .deposit .card {
     width: 90%;
   }
+  table {
+    width: 200%;
+  }
+  .progress{
+    height: 1vh;
+  }
 
 
 }
@@ -253,6 +262,9 @@ body{
   }
   .calculator form select {
     margin-bottom: 1vh;
+}
+table{
+  width: 230%;
 }
 
 }

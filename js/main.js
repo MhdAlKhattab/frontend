@@ -3,8 +3,8 @@ $(document).ready(function () {
     'use strict';
 
     $('.center').fadeOut(2000);
-
-
+    
+    ///Show The Scroll Top And Hide It
     var scrollButton = $("#scroll-top");
 
 
@@ -26,6 +26,8 @@ $(document).ready(function () {
         $("html,body").animate({ scrollTop: 0 }, 2000);
 
     });
+
+    ///////Click on NavBar And Go To The Correct Place
     $('#home').click(function () {
         $(this).addClass('active');
         $(this).siblings().removeClass('active')
@@ -99,12 +101,14 @@ $(document).ready(function () {
         return fileTypes.includes(file.type);
     }
 
-    // On Modal submit
+    // On Modal submit Local Storge
     $('.deposit-form').submit(function (e) {
         e.preventDefault();
 
         console.log(this.serialize());
         $(location).attr('href', 'deposit-details.html');
     });
+    ////For Calculater
+    
 
 });

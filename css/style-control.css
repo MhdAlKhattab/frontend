@@ -262,18 +262,16 @@ td {
 }
 .control-table h5{
     line-height: 2;
-    font-size: 2vmin;
+    font-size: 3vmin;
 }
 .status{
     color: #FFF !important;
     background: #28a745;
     text-align: center;
-    /* border-radius: 0px; */
 }
 .Panding{
     color: #FFF !important;
     background: #ddd91a;
-    border-radius: 5px;
     text-align: center;
 }
 /* End  History */
