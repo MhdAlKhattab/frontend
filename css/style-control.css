@@ -254,6 +254,7 @@ td {
     color: #FFF !important;
     background: #28a745;
     text-align: center;
+    padding: 1vmin;
 }
 .Panding{
     color: #FFF !important;
@@ -302,6 +303,7 @@ td {
     padding: 2vh;
     border-radius: 5px;
     color: #FFF;
+    border: 2px solid #ccc;
 }
 /* End Referral */
 /* Start Modal */
@@ -369,6 +371,7 @@ td {
 
 .modal-content .modal-body .signup-popup .modal-footer :first-child {
     color: #FFF;
+    border: 1px solid #28a745;
     background: #28a745;
 }
 
