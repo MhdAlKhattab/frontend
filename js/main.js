@@ -7,6 +7,21 @@ $(document).ready(function () {
     ///Show The Scroll Top And Hide It
     var scrollButton = $("#scroll-top");
 
+     //Calculater 
+    var inputcal = document.getElementById('inputcal'),
+        resultcal =document.getElementById('resultcal'),
+        selectcal = document.getElementById('selectcal');
+        selectcal.onchange = function(){
+        'use strict';
+        resultcal.value = inputcal.value * selectcal.value;
+    }
+    
+    // inputcal.onchange = function(){
+        
+    //     'use strict';
+        
+    //     resultcal.innerHTML = inputcal.val * 20;
+    // };  
 
     $(window).scroll(function () {
 
