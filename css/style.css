@@ -6,7 +6,8 @@
 .container {
   max-width: 1400px;
 }
-body{
+
+body {
   margin: 0;
 }
 
@@ -27,7 +28,7 @@ body{
 }
 
 .navbar .navbar-nav {
-  margin-right: 15vh;
+  margin: 1vmin auto;
 }
 
 .navbar .navbar-nav .nav-link {
@@ -60,20 +61,36 @@ body{
   border-radius: 5px;
   cursor: pointer;
 }
-.dropdown-menu {background-color:#466795;min-width:200px;width: 30%;}
-.dropdown-menu > li > a {color:#FFF;padding:6px 20px;transition: .5s;}
 
-.dropdown-menu > li > a:hover,
+.dropdown-menu {
+  background-color: #466795;
+  min-width: 200px;
+  width: 30%;
+}
 
-.dropdown-menu > li > a:focus {color:#FFF;padding-left:25px;text-decoration: none;}
+.dropdown-menu>li>a {
+  color: #FFF;
+  padding: 6px 20px;
+  transition: .5s;
+}
+
+.dropdown-menu>li>a:hover,
+
+.dropdown-menu>li>a:focus {
+  color: #FFF;
+  padding-left: 25px;
+  text-decoration: none;
+}
 
 /* End Navbar */
 
 
 /* Start FramWork */
-.progress-bar{
-  background-color: #28a745;
+.progress-bar {
+  background-color: #004085;
+
 }
+
 .overlay {
   position: absolute;
   left: 0;
@@ -96,10 +113,12 @@ body{
 .padding-botton {
   padding-bottom: 8vh;
 }
-.btn{
+
+.btn {
   cursor: pointer;
 }
-.pointer{
+
+.pointer {
   position: fixed;
   bottom: 5vmin;
   right: 5vmin;
@@ -118,7 +137,8 @@ body{
 #scroll-top {
   display: none;
 }
-.color{
+
+.color {
   color: #466795;
 }
 
@@ -157,41 +177,50 @@ body{
   .calculator form input {
     margin-bottom: 2vh;
   }
-  .contact-us span{
+
+  .contact-us span {
     font-size: 2.5vmin;
   }
-  .padding-top{
+
+  .padding-top {
     padding-top: 15vh;
   }
+
   .lead {
     font-size: 3vmin;
   }
-  .deposit .card{
+
+  .deposit .card {
     text-align: center;
   }
+
   .deposit img {
-    width: 50%; 
+    width: 50%;
     display: block;
-    margin: 0 auto;   
-}
+    margin: 0 auto;
+  }
 }
 
 /* Media */
 @media (max-width: 768px) {
-  .padding-top{
+  .padding-top {
     padding-top: 10vh;
   }
-  .contact-us span{
+
+  .contact-us span {
     font-size: 4vmin;
   }
-  .contact-us img{
+
+  .contact-us img {
     display: block;
     margin: 5vh auto;
   }
+
   .deposit .card {
     width: 70%;
     margin: auto;
   }
+
   table {
     width: 150%;
   }
@@ -241,10 +270,12 @@ body{
   .deposit .card {
     width: 90%;
   }
+
   table {
     width: 200%;
   }
-  .progress{
+
+  .progress {
     height: 1vh;
   }
 
@@ -260,11 +291,13 @@ body{
   .plans .card ul li {
     margin-bottom: 10vmin;
   }
+
   .calculator form select {
     margin-bottom: 1vh;
-}
-table{
-  width: 230%;
-}
+  }
+
+  table {
+    width: 230%;
+  }
 
 }

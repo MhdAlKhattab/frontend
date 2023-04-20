@@ -101,7 +101,7 @@
   /* End About Us */
   /* Start plan */
   .plans {
-    background-image: url('../image/cell.png');
+    background-image: url('../image/bubble2.png');
     background-size: cover;
     background-attachment: fixed;
     min-height: 100vh;
@@ -118,10 +118,9 @@
     border: 1px solid #103e57;
     padding: 5vmin;
     position: relative;
-    transition: .8s;
+    transition: .2s;
   }
   .plans .card:hover {
-    width: 24%;
     padding: 6vmin;
   }
 
@@ -132,7 +131,6 @@
   }
   
   .plans .card ul li {
-    border-bottom: 1px solid #CCC;
     margin-bottom: 4vmin;
   }
   
