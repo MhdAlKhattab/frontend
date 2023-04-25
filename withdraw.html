@@ -145,9 +145,9 @@
               aria-hidden="true">&times;</span></button>
           <div class="row">
             <div class="col-sm-12 text-center col-xs-height">
-              <form class="signup-popup withdraw-form">
+              <form class="signup-popup withdraw-form" data-method="bitcoin">
                 <label class="btn-block">Enter The Amount:</label>
-                <input class="col-xs-12" type="text" name="amount" placeholder="0.00" required>
+                <input class="col-xs-12" type="text" name="amount" placeholder="0.00" pattern="[0-9]{1,}" required>
                 <i class="fa fa-dollar"></i>
                 <div class="modal-footer">
                   <button type="submit" class="btn">Next</a>
@@ -173,9 +173,9 @@
               aria-hidden="true">&times;</span></button>
           <div class="row">
             <div class="col-sm-12 text-center col-xs-height">
-              <form class="signup-popup withdraw-form">
+              <form class="signup-popup withdraw-form" data-method="perfect">
                 <label class="btn-block">Enter The Amount:</label>
-                <input class="col-xs-12" type="text" name="amount" placeholder="0.00" required>
+                <input class="col-xs-12" type="text" name="amount" placeholder="0.00" pattern="[0-9]{1,}" required>
                 <i class="fa fa-dollar"></i>
                 <div class="modal-footer">
                   <button type="submit" class="btn">Next</a>
@@ -200,9 +200,9 @@
               aria-hidden="true">&times;</span></button>
           <div class="row">
             <div class="col-sm-12 text-center col-xs-height">
-              <form class="signup-popup withdraw-form">
+              <form class="signup-popup withdraw-form" data-method="payeer">
                 <label class="btn-block">Enter The Amount:</label>
-                <input class="col-xs-12" type="text" name="amount" placeholder="0.00" required>
+                <input class="col-xs-12" type="text" name="amount" placeholder="0.00" pattern="[0-9]{1,}" required>
                 <i class="fa fa-dollar"></i>
                 <div class="modal-footer">
                   <button type="submit" class="btn">Next</a>
@@ -227,9 +227,9 @@
               aria-hidden="true">&times;</span></button>
           <div class="row">
             <div class="col-sm-12 text-center col-xs-height">
-              <form class="signup-popup withdraw-form">
+              <form class="signup-popup withdraw-form" data-method="lite">
                 <label class="btn-block">Enter The Amount:</label>
-                <input class="col-xs-12" type="text" name="amount" placeholder="0.00" required>
+                <input class="col-xs-12" type="text" name="amount" placeholder="0.00" pattern="[0-9]{1,}" required>
                 <i class="fa fa-dollar"></i>
                 <div class="modal-footer">
                   <button type="submit" class="btn">Next</a>
@@ -247,7 +247,7 @@
   <script src="js/jq.js"></script>
   <script src="js/popper.min.js"></script>
   <script src="js/bootstrap.min.js"></script>
-  <script src="js/main.js"></script>
+  <script src="js/withdraw.js"></script>
 </body>
 
 </html>
