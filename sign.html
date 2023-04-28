@@ -16,13 +16,13 @@
   <!--Start Sign-->
   <div class="login sign">
     <div class="overlay">
-      <form class="center-block">
+      <form class="center-block" id="signForm">
         <h3 class="text-center log-header color">SIGN IN</h3>
-        <input class="form-control" type="text" name="f-name" placeholder="First name" />
-        <input class="form-control" type="text" name="l-name" placeholder="Last Name" />
+        <input class="form-control" type="text" name="first_name" placeholder="First name" required/>
+        <input class="form-control" type="text" name="last_name" placeholder="Last Name" required/>
         <div class="row">
           <!-- country codes (ISO 3166) and Dial codes. -->
-          <select name="countryCode" id="" class="col-4">
+          <select name="countryCode" class="col-4">
             <option data-countryCode="GB" value="44" Selected>UK (+44)</option>
             <option data-countryCode="US" value="1">USA (+1)</option>
             <optgroup label="Other countries">
@@ -242,12 +242,13 @@
               <option data-countryCode="ZW" value="263">Zimbabwe (+263)</option>
             </optgroup>
           </select>
-          <input class="form-control col-8" type="text" name="num" placeholder="Mobile Phone" />
+          <input class="form-control col-8" type="text" name="phone_number" placeholder="Mobile Phone" required/>
         </div>
-        <input class="form-control" type="email" name="email" placeholder="User Name" />
-        <input class="form-control" type="email" name="email" placeholder="Email" />
-        <input class="form-control" type="password" name="password" placeholder="Password" />
-        <input class="form-control" type="text" name="confirm" placeholder="Confirm Password" />
+        <input class="form-control" type="text" name="user_name" placeholder="User Name" required/>
+        <input class="form-control" type="email" name="email" placeholder="Email" required/>
+        <input class="form-control" type="password" name="password" placeholder="Password" required/>
+        <input class="form-control" type="password" name="confirm_password" placeholder="Confirm Password" required/>
+        <div class="error-message text-center"></div>
         <div class="log-footer">
           <button class=" btn btn-success" value="Submit">Submit</button>
           <a class="btn btn-success" href="login.html">Log In</a>
@@ -262,6 +263,7 @@
   <script src="js/jq.js"></script>
   <script src="js/popper.min.js"></script>
   <script src="js/bootstrap.min.js"></script>
+  <script src="api/auth.js"></script>
 </body>
 
 </html>
