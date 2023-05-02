@@ -237,10 +237,10 @@
   
   /* End Calculator */
   /* Start Contact Us */
-  .contact-us{
+  /* .contact-us{
     background-image: url('../image/l.jpg');
     min-height: 100vh;
-  }
+  } */
   .contact-us input{
     margin-bottom: 4vh;
     padding: 2vh;

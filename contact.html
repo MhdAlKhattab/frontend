@@ -12,6 +12,15 @@
   <link rel='stylesheet' href='css/hover.css' />
   <link rel='stylesheet' href='css/animate.css' />
   <title>Contact Us</title>
+
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+  <script type="text/javascript">
+      (function() {
+          // https://dashboard.emailjs.com/admin/account
+          emailjs.init('TkmBgNK2iBu9W1zxh');
+      })();
+  </script>
+
 </head>
 
 <body>
@@ -62,11 +71,11 @@
                 
             </div>
             <div class="col-md-7">
-                <form>
+                <form id="contact-form">
                     <label class="header">Put Your Tauch:</label>
-                    <input class="btn-block" type="text" placeholder="User Name">
-                    <input class="btn-block" type="email" placeholder="Email">
-                    <textarea class="btn-block" placeholder="Message"></textarea>
+                    <input class="btn-block" type="text" name="name" placeholder="User Name" required>
+                    <input class="btn-block" type="email" name="email" placeholder="Email" required>
+                    <textarea class="btn-block" name="message" placeholder="Message" required></textarea>
                     <button type="submit" class="btn btn-success btn-lg">Submit</button>
                 </form>
             </div>
@@ -79,7 +88,8 @@
   <script src="js/popper.min.js"></script>
   <script src="js/bootstrap.min.js"></script>
   <script src="js/wow.min.js"></script>
-  <script>new WOW().init();</script>  
+  <script>new WOW().init();</script>
+  <script src="js/contact.js"></script>
 </body>
 
 </html>  
