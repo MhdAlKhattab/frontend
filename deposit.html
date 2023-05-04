@@ -46,7 +46,7 @@
             <a href="#" class="dropdown-toggle nav-link" data-toggle="dropdown">Account <span class="caret"></span></a>
             <ul class="dropdown-menu" role="menu">
               <li><a href="account.html">Change Password</a></li>
-              <li><a href="#">Cheak Out</a></li>
+              <li id="checkOut"><a href="#">Cheak Out</a></li>
           </li>
         </ul>
       </div>
@@ -100,7 +100,7 @@
               <div class="col-lg-4 ">
                 <img src="image/payeer-thumbnail.png" class="img-fluid rounded-start" alt="...">
               </div>
-              <div class="col-lg-8" >
+              <div class="col-lg-8">
                 <div class="card-body text-center">
                   <h3 class="card-title">Payeer</h3>
                   <h5 class="card-title">Limit : 10 - 500000 USD</h5>
@@ -173,11 +173,12 @@
             <div class="col-sm-12 text-center col-xs-height">
               <form class="signup-popup deposit-form" data-method="bitcoin">
                 <label class="btn-block">Enter The Amount:</label>
-                <input class="col-xs-12 amount" type="text" name="amount" placeholder="0.00" pattern="[0-9]{1,}" required>
+                <input class="col-xs-12 amount" type="text" name="amount" placeholder="0.00" pattern="[0-9]{1,}"
+                  required>
                 <i class="fa fa-dollar"></i>
                 <div class="modal-footer">
                   <button type="submit" class="btn">Next</a>
-                  <button class="btn btn-danger button delete" data-dismiss="modal">Close</button>
+                    <button class="btn btn-danger button delete" data-dismiss="modal">Close</button>
                 </div>
               </form>
             </div>
@@ -206,7 +207,7 @@
                   <i class="fa fa-dollar"></i>
                   <div class="modal-footer">
                     <button type="submit" class="btn">Next</a>
-                    <button class="btn btn-danger button delete" data-dismiss="modal">Close</button>
+                      <button class="btn btn-danger button delete" data-dismiss="modal">Close</button>
                   </div>
                 </form>
               </div>
@@ -234,7 +235,7 @@
                 <i class="fa fa-dollar"></i>
                 <div class="modal-footer">
                   <button type="submit" class="btn">Next</a>
-                  <button class="btn btn-danger button delete" data-dismiss="modal">Close</button>
+                    <button class="btn btn-danger button delete" data-dismiss="modal">Close</button>
                 </div>
               </form>
             </div>
@@ -261,7 +262,7 @@
                 <i class="fa fa-dollar"></i>
                 <div class="modal-footer">
                   <button type="submit" class="btn">Next</a>
-                  <button class="btn btn-danger button delete" data-dismiss="modal">Close</button>
+                    <button class="btn btn-danger button delete" data-dismiss="modal">Close</button>
                 </div>
               </form>
             </div>
@@ -275,6 +276,7 @@
   <script src="js/popper.min.js"></script>
   <script src="js/bootstrap.min.js"></script>
   <script src="js/deposit.js"></script>
+  <script src="api/auth.js"></script>
 </body>
 
 </html>

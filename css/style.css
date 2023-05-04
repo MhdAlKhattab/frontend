@@ -141,6 +141,15 @@ body {
 .color {
   color: #466795;
 }
+.error-message{
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+.nodata{
+  text-align: center;
+  color: #EEE;
+  font-size: 4vmin;
+}
 
 /* End FramWork */
 /* Media */

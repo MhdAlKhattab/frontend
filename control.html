@@ -46,7 +46,7 @@
             <a href="#" class="dropdown-toggle nav-link" data-toggle="dropdown">Account <span class="caret"></span></a>
             <ul class="dropdown-menu" role="menu">
               <li><a href="account.html">Change Password</a></li>
-              <li><a href="#">Cheak Out</a></li>
+              <li id="checkOut"><a href="#">Cheak Out</a></li>
           </li>
         </ul>
       </div>
@@ -114,12 +114,12 @@
         </div>
       </div>
       <div class="buttons text-center">
-        <a href="history-depositer.html " class="con-history">History Deposit</a>
-        <a href="history-withdraw.html" class="con-history">History Withdraw</a>
+        <a href="#" class="con-history" id="depositHistory">History Deposit</a>
+        <a href="#" class="con-history" id="withdrawHistory">History Withdraw</a>
       </div>
 
       <div class="control-table">
-        <table>
+        <table id="controlPanel">
           <tr style="background-color: black;">
             <th>Name</th>
             <th>Date</th>
@@ -127,36 +127,8 @@
             <th>Way</th>
           </tr>
           <tr>
-            <td><h5>Ali Essa</h5></td>
-            <td><h5>22/2/2010</h5></td>
-            <td><h5>1654$</h5></td>
-            <td><h5>Payeer</h5></td>
+            <td colspan="4" style="text-align: center;color: white;">Lodding..</td>
           </tr>
-          <tr>
-            <td><h5>Ali Essa</h5></td>
-            <td><h5>22/2/2010</h5></td>
-            <td><h5>1654$</h5></td>
-            <td><h5>Payeer</h5></td>
-          </tr>
-          <tr>
-            <td><h5>Ali Essa</h5></td>
-            <td><h5>22/2/2010</h5></td>
-            <td><h5>1654$</h5></td>
-            <td><h5>Payeer</h5></td>
-          </tr>
-          <tr>
-            <td><h5>Ali Essa</h5></td>
-            <td><h5>22/2/2010</h5></td>
-            <td><h5>1654$</h5></td>
-            <td><h5>Payeer</h5></td>
-          </tr>
-          <tr>
-            <td><h5>Ali Essa</h5></td>
-            <td><h5>22/2/2010</h5></td>
-            <td><h5>1654$</h5></td>
-            <td><h5>Payeer</h5></td>
-          </tr>
-
         </table>
       </div>
 
@@ -173,6 +145,7 @@
   <script src="js/popper.min.js"></script>
   <script src="js/bootstrap.min.js"></script>
   <script src="api/info.js"></script>
+  <script src="api/auth.js"></script>
 </body>
 
 </html>

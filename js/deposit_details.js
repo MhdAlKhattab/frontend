@@ -6,7 +6,7 @@ $(document).ready(function () {
     const input = document.getElementById('image_uploads');
     const preview = document.querySelector('.preview');
 
-    // input.addEventListener('change', updateImageDisplay);
+    input.addEventListener('change', updateImageDisplay);
     function updateImageDisplay() {
         while (preview.firstChild) {
             preview.removeChild(preview.firstChild);

@@ -46,7 +46,7 @@
             <a href="#" class="dropdown-toggle nav-link" data-toggle="dropdown">Change Password<span class="caret"></span></a>
             <ul class="dropdown-menu" role="menu">
               <li><a href="control.html">Account</a></li>
-              <li><a href="#">Cheak Out</a></li>
+              <li id="checkOut"><a href="#">Cheak Out</a></li>
           </li>
         </ul>
       </div>
@@ -57,11 +57,12 @@
     <!--Start Login-->
     <div class="login">
         <div class="overlay padding-top">
-            <form class="center-block">
+            <form class="center-block" id="changePassportForm">
                 <h3 class="text-center log-header color">Change Password</h3>
-                <input class="form-control" type="text" name="old-password" placeholder="Old Password" />
-                <input class="form-control" type="password" name="new-password" placeholder="New Password" />
-                <input class="form-control" type="password" name="confirm-password" placeholder="Confirm Password" />
+                <input class="form-control" type="password" name="old_password" placeholder="Old Password" required/>
+                <input class="form-control" type="password" name="new_password" placeholder="New Password" required/>
+                <input class="form-control" type="password" name="confirm_new_password" placeholder="Confirm Password" required/>
+                <div class="error-message text-center"></div>
                 <div class="log-footer">
                   <button class=" btn btn-success" value="Submit">Submit</button>
                 </div>

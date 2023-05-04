@@ -47,7 +47,7 @@
                                 class="caret"></span></a>
                         <ul class="dropdown-menu" role="menu">
                             <li><a href="account.html">Change Password</a></li>
-                            <li><a href="#">Cheak Out</a></li>
+                            <li id="checkOut"><a href="#">Cheak Out</a></li>
                     </li>
                 </ul>
             </div>
@@ -63,7 +63,7 @@
             <a href="withdraw.html" class="history-button btn">Withdraw Now</a>
             <h3 class="header text-center">History Withdraw:</h3>
             <div class="control-table ">
-                <table>
+                <table id="withdrawTable">
                     <tr style="background-color: black;">
                         <th>Amount</th>
                         <th>Rate</th>
@@ -73,90 +73,8 @@
                         <th>More</th>
                     </tr>
                     <tr>
-                        <td>
-                            <p>16 USD</p>
-                            <p>Via Perfect Money</p>
-                        </td>
-                        <td>
-                            <p>1 USD = USD</p>
-                            <p>16 USD = 16 USD</p>
-                        </td>
-                        <td>
-                            <p>0.34 USD</p>
-                            <p>Or 4.97 USD</p>
-                        </td>
-                        <td><span>456 USD</span></td>
-                        <td>
-                            <span class="status">Complete</span>
-                        </td>
-                        <td><i class="fa fa-list fa-lg" class="btn" type="button" class="btn btn-primary"
-                                data-toggle="modal" data-target=".modal1"></i></td>
-                        </td>
+                        <td colspan="6" style="text-align: center;color: white;">Lodding..</td>
                     </tr>
-                    <tr>
-                        <td>
-                            <p>16 USD</p>
-                            <p>Via Perfect Money</p>
-                        </td>
-                        <td>
-                            <p>1 USD = USD</p>
-                            <p>16 USD = 16 USD</p>
-                        </td>
-                        <td>
-                            <p>0.34 USD</p>
-                            <p>Or 4.97 USD</p>
-                        </td>
-                        <td><span>456 USD</span></td>
-                        <td>
-                            <span class="status">Complete</span>
-                        </td>
-                        <td><i class="fa fa-list fa-lg" class="btn" type="button" class="btn btn-primary"
-                                data-toggle="modal" data-target=".modal1"></i></td>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <p>16 USD</p>
-                            <p>Via Perfect Money</p>
-                        </td>
-                        <td>
-                            <p>1 USD = USD</p>
-                            <p>16 USD = 16 USD</p>
-                        </td>
-                        <td>
-                            <p>0.34 USD</p>
-                            <p>Or 4.97 USD</p>
-                        </td>
-                        <td><span>456 USD</span></td>
-                        <td>
-                            <span class="status">Complete</span>
-                        </td>
-                        <td><i class="fa fa-list fa-lg" class="btn" type="button" class="btn btn-primary"
-                                data-toggle="modal" data-target=".modal1"></i></td>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <p>16 USD</p>
-                            <p>Via Perfect Money</p>
-                        </td>
-                        <td>
-                            <p>1 USD = USD</p>
-                            <p>16 USD = 16 USD</p>
-                        </td>
-                        <td>
-                            <p>0.34 USD</p>
-                            <p>Or 4.97 USD</p>
-                        </td>
-                        <td><span>456 USD</span></td>
-                        <td>
-                            <span class="status">Complete</span>
-                        </td>
-                        <td><i class="fa fa-list fa-lg" class="btn" type="button" class="btn btn-primary"
-                                data-toggle="modal" data-target=".modal1"></i></td>
-                        </td>
-                    </tr>
-                  
                 </table>
             </div>
 
@@ -166,33 +84,11 @@
 
     <!--End  Withdraw history-->
 
-    <!--Modal 1-->
-    <div class="modal fade modal1" id="modal1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
-        aria-hidden="true">
-        <div class="modal-dialog modal-lg">
-            <div class="modal-content">
-                <h4>More Information:</h4>
-                <div class="modal-body">
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
-                            aria-hidden="true">&times;</span></button>
-                    <div class="row">
-                        <div class="col-sm-12 text-center col-xs-height">
-                            <div class="signup-popup deposit-form">
-                                <p>It Is Done</p>
-                                <div class="modal-footer">
-                                     <button class="btn btn-danger button delete" data-dismiss="modal">Close</button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
     <script src="js/jq.js"></script>
     <script src="js/popper.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
+    <script src="api/auth.js"></script>
+    <script src="api/withdraw-history.js"></script>
 </body>
 
 </html>

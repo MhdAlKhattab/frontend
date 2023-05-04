@@ -1,5 +1,5 @@
 $(document).ready(function () {
-    
+
     // Sign Up
     $("#signForm").submit(function (e) {
         e.preventDefault();
@@ -8,15 +8,21 @@ $(document).ready(function () {
             url: "http://127.0.0.1:8000/api/register",
             type: "POST",
             data: $("#signForm").serialize(),
-            dataType: 'JSON',
+            dataType: "json",
             success: function (data) {
-                console.log(data);
                 localStorage.setItem('access_token', data.access_token);
-                console.log(localStorage.getItem('access_token'));
                 $(location).attr('href', 'control.html');
             },
-            error: function () {
-                $('.error-message').empty().append('<span class="badge badge-danger">You Have Some Errors in Your Information</span>');
+            error: function (error) {
+                output = '';
+
+                for (var er in error.responseJSON.errors) {
+                    output += `
+                        ${error.responseJSON.errors[er][0]}
+                        <br>
+                    `;
+                }
+                $('.error-message').empty().append('<span class="badge badge-danger">' + output + '</span>');
             }
         });
     });
@@ -32,11 +38,47 @@ $(document).ready(function () {
             dataType: 'JSON',
             success: function (data) {
                 localStorage.setItem('access_token', data.access_token);
-                console.log(localStorage.getItem('access_token'));
                 $(location).attr('href', 'control.html');
             },
             error: function () {
-                $('.error-message').empty().append('<span class="badge badge-danger">You Have Some Errors in Your Information</span>');
+                $('.error-message').empty().append('<span class="badge badge-danger">Invalid login details</span>');
+            }
+        });
+    });
+
+    // Change Passport
+    $("#changePassportForm").submit(function (e) {
+        e.preventDefault();
+
+        $.ajax({
+            url: "http://127.0.0.1:8000/api/change-password",
+            headers: { "Authorization": "Bearer " + localStorage.getItem('access_token') },
+            type: "POST",
+            data: $("#changePassportForm").serialize(),
+            dataType: "json",
+            success: function (data) {
+                localStorage.setItem('access_token', data.access_token);
+                $(location).attr('href', 'control.html');
+            },
+            error: function (error) {
+                $('.error-message').empty().append('<span class="badge badge-danger">Invalid login details</span><br>');
+            }
+        });
+    });
+
+    // Check Out
+    $("#checkOut").click(function (e) {
+        e.preventDefault();
+
+        $.ajax({
+            url: "http://127.0.0.1:8000/api/logout",
+            headers: { "Authorization": "Bearer " + localStorage.getItem('access_token') },
+            dataType: "json",
+            success: function (data) {
+                localStorage.removeItem('access_token');
+                $(location).attr('href', 'login.html');
+            },
+            error: function (error) {
             }
         });
     });
