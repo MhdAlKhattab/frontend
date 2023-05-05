@@ -93,6 +93,10 @@ $(document).ready(function () {
 
             } else {
 
+                $('.lodding').remove();
+
+                $('.nodata').remove();
+                
                 $('#withdrawTable').parent().append(`<div class="nodata">There Is No Data.</div>`);
             }
 

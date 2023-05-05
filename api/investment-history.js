@@ -82,6 +82,10 @@ $(document).ready(function () {
                 checkProgress();
             } else {
 
+                $('.lodding').remove();
+
+                $('.nodata').remove();
+                
                 $('#investmentTable').parent().append(`<div class="nodata">There Is No Data.</div>`);
             }
         });

@@ -73,6 +73,9 @@ $(document).ready(function () {
                 $('#controlPanel').empty().append(output);
 
             } else {
+                $('.lodding').remove();
+
+                $('.nodata').remove();
 
                 $('#controlPanel').parent().append(`<div class="nodata">There Is No Data.</div>`);
             }
@@ -119,6 +122,10 @@ $(document).ready(function () {
 
             } else {
 
+                $('.lodding').remove();
+
+                $('.nodata').remove();
+                
                 $('#controlPanel').parent().append(`<div class="nodata">There Is No Data.</div>`);
             }
 
