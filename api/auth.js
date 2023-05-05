@@ -76,6 +76,10 @@ $(document).ready(function () {
             dataType: "json",
             success: function (data) {
                 localStorage.removeItem('access_token');
+                localStorage.removeItem('withdraw-method');
+                localStorage.removeItem('withdraw-amount');
+                localStorage.removeItem('deposit-method');
+                localStorage.removeItem('deposit-amount');
                 $(location).attr('href', 'login.html');
             },
             error: function (error) {

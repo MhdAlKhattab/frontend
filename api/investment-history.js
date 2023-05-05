@@ -44,8 +44,7 @@ $(document).ready(function () {
                     if (item.return_period == 'week') {
                         maxVal = 604800;
                     } else if (item.return_period == 'month') {
-                        // 2628288
-                        maxVal = 200;
+                        maxVal = 2628288;
                     } else if (item.return_period == '6 month') {
                         maxVal = 15778463;
                     } else if (item.return_period == 'year') {
@@ -104,8 +103,8 @@ $(document).ready(function () {
                 maxVal = parseInt(element.children[1].children[0].getAttribute('data-valuemax'));
                 state = parseInt(element.children[1].children[0].getAttribute('data-state'));
 
-                // if (state == 1 && nowVal < maxVal) {
-                if(nowVal < maxVal){
+                if (state == 1 && nowVal < maxVal) {
+                // if(nowVal < maxVal){
                     nowVal += 1;
                     element.children[1].children[0].setAttribute('data-valuenow', nowVal);
                     progressWidth = (nowVal / maxVal) * 100;

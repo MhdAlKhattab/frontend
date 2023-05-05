@@ -18,6 +18,9 @@ $(document).ready(function () {
             contentType: false,
             success: function (data) {
                 $(location).attr('href', 'control.html');
+
+                localStorage.removeItem('withdraw-method');
+                localStorage.removeItem('withdraw-amount');
             },
             error: function (error) {
                 output = '';

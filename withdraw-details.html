@@ -12,6 +12,17 @@
 
   <title>Withdraw <Details></Details>
   </title>
+
+  <script>
+    // If we do not login yet
+    if (localStorage.getItem("access_token") == null) {
+      window.location = 'login.html';
+    }
+
+    if(localStorage.getItem("withdraw-method") == null){
+      window.location = 'withdraw.html';
+    }
+  </script>
 </head>
 
 <body>

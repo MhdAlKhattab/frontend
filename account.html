@@ -11,6 +11,13 @@
   <link rel="stylesheet" href="css/style.css">
 
   <title>Acount</title>
+
+  <script>
+    // If we do not login yet
+    if (localStorage.getItem("access_token") == null) {
+      window.location = 'login.html';
+    }
+  </script>
 </head>
 
 <body>
@@ -43,10 +50,10 @@
             <a class="nav-link" href="referral.html">Referral</a>
           </li>
           <li class="dropdown nav-item active">
-            <a href="#" class="dropdown-toggle nav-link" data-toggle="dropdown">Change Password<span class="caret"></span></a>
+            <a href="#" class="dropdown-toggle nav-link" data-toggle="dropdown">Account<span class="caret"></span></a>
             <ul class="dropdown-menu" role="menu">
-              <li><a href="control.html">Account</a></li>
-              <li id="checkOut"><a href="#">Cheak Out</a></li>
+              <li><a href="account.html">Change Password</a></li>
+              <li id="checkOut"><a href="#">Check Out</a></li>
           </li>
         </ul>
       </div>
@@ -54,23 +61,24 @@
     </div>
   </nav>
 
-    <!--Start Login-->
-    <div class="login">
-        <div class="overlay padding-top">
-            <form class="center-block" id="changePassportForm">
-                <h3 class="text-center log-header color">Change Password</h3>
-                <input class="form-control" type="password" name="old_password" placeholder="Old Password" required/>
-                <input class="form-control" type="password" name="new_password" placeholder="New Password" required/>
-                <input class="form-control" type="password" name="confirm_new_password" placeholder="Confirm Password" required/>
-                <div class="error-message text-center"></div>
-                <div class="log-footer">
-                  <button class=" btn btn-success" value="Submit">Submit</button>
-                </div>
-              </form>
-              <a href="control.html" class="btn"><i class="fa fa-chevron-right pointer" id=""></i></a>
+  <!--Start Login-->
+  <div class="login">
+    <div class="overlay padding-top">
+      <form class="center-block" id="changePassportForm">
+        <h3 class="text-center log-header color">Change Password</h3>
+        <input class="form-control" type="password" name="old_password" placeholder="Old Password" required />
+        <input class="form-control" type="password" name="new_password" placeholder="New Password" required />
+        <input class="form-control" type="password" name="confirm_new_password" placeholder="Confirm Password"
+          required />
+        <div class="error-message text-center"></div>
+        <div class="log-footer">
+          <button class=" btn btn-success" value="Submit">Submit</button>
         </div>
-      </div>
-      <!--End Login-->
+      </form>
+      <a href="control.html" class="btn"><i class="fa fa-chevron-right pointer" id=""></i></a>
+    </div>
+  </div>
+  <!--End Login-->
 
   <script src="js/jq.js"></script>
   <script src="js/popper.min.js"></script>
