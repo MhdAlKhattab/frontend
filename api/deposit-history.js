@@ -25,12 +25,12 @@ $(document).ready(function () {
             `;
 
             var modals = '';
+            var state = '';
 
             if (items.data.length !== 0) {
 
                 $.each(items.data, function (key, item) {
 
-                    var state = '';
                     if(item.state == 0){
                         state = `<span class="Panding">Panding</span>`;
                     }else if(item.state == 1){

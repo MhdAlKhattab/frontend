@@ -272,6 +272,11 @@ td {
     background: #db1212;
     text-align: center;
 }
+.Progress{
+    color: #FFF !important;
+    background: #0b0ff1;
+    text-align: center;
+}
 /* End  History */
 /* Start Account */
   .login {
