@@ -10,13 +10,13 @@
     <link rel="stylesheet" href="css/style-control.css">
     <link rel="stylesheet" href="css/style.css">
 
-    <title>History Deposit</title>
+    <title>Control Balane</title>
 
     <script>
-        // If we do not login yet
-        if (localStorage.getItem("access_token") == null) {
-            window.location = 'login.html';
-        }
+    // If we do not login yet
+    // if (localStorage.getItem("access_token") == null) {
+    //   window.location = 'login.html';
+    // }
     </script>
 </head>
 
@@ -34,19 +34,20 @@
             </button>
             <div class="collapse navbar-collapse" id="main-nav">
                 <ul class="navbar-nav ml-auto">
+
                     <li class="nav-item " id="home">
                         <a class="nav-link " href="control.html">Control Panal</a>
                     </li>
                     <li class="nav-item" id="about-us">
                         <a class="nav-link" href="investment.html">Investment</a>
                     </li>
-                    <li class="nav-item active" id="plans">
+                    <li class="nav-item" id="plans">
                         <a class="nav-link" href="deposit.html">Deposit</a>
                     </li>
                     <li class="nav-item" id="note">
                         <a class="nav-link" href="withdraw.html">Withdraw</a>
                     </li>
-    
+   
                     <li class="dropdown nav-item">
                         <a href="#" class="dropdown-toggle nav-link" data-toggle="dropdown">Account <span
                                 class="caret"></span></a>
@@ -55,12 +56,12 @@
                             <li id="checkOut"><a href="#">Cheak Out</a></li>
                         </ul>
                     </li>
-                    <li class="dropdown nav-item">
-                        <a href="#" class="dropdown-toggle nav-link" data-toggle="dropdown">Referral <span
+                    <li class="dropdown nav-item active">
+                        <a href="#" class="dropdown-toggle nav-link" data-toggle="dropdown">Users <span
                                 class="caret"></span></a>
                         <ul class="dropdown-menu" role="menu">
-                            <li><a href="users.html">Users</a></li>
-                            <li id="checkOut"><a href="plans.html">Plans</a></li>
+                            <li><a href="control.html">Referral</a></li>
+                            <li><a href="plans.html">Plans</a></li>
                         </ul>
                     </li>
                 </ul>
@@ -69,37 +70,71 @@
         </div>
     </nav>
     <!-- End Navbar -->
-    <!--Start Diposit history-->
-    <div class="history padding-top">
+    <!--Start Refeeral Of Users-->
+    <div class="referral padding-top">
         <div class="container">
-            <a href="deposit.html" class="history-button btn">Deposit Now</a>
-
-            <h3 class="header text-center">History Deposit:</h3>
-            <div class="control-table">
-                <table id="depositTable">
-                    <tr style="background-color: black;">
-                        <th>Transaction ID</th>
-                        <th>Gateway</th>
-                        <th>Amount</th>
-                        <th>Status</th>
-                        <th>Time</th>
-                        <th>More</th>
-                    </tr>
-                    <tr>
-                        <td colspan="6" style="text-align: center;color: white;">Lodding..</td>
-                    </tr>
-                </table>
+            <div class="users text-center row">
+                <div class="user">
+                    <i class="fa fa-user"></i>
+                    <h2>Lujain Shqer</h2>
+                    <h3>Date: 30/5/2001</h3>
+                </div>
+                <div class="user">
+                    <i class="fa fa-user"></i>
+                    <h2>Lujain Shqer</h2>
+                    <h3>Date: 30/5/2001</h3>
+                </div>
+                <div class="user ">
+                    <i class="fa fa-user"></i>
+                    <h2>Lujain Shqer</h2>
+                    <h3>Date: 30/5/2001</h3>
+                </div>
+                <div class="user ">
+                    <i class="fa fa-user"></i>
+                    <h2>Lujain Shqer</h2>
+                    <h3>Date: 30/5/2001</h3>
+                </div>
+                <div class="user">
+                    <i class="fa fa-user"></i>
+                    <h2>Lujain Shqer</h2>
+                    <h3>Date: 30/5/2001</h3>
+                </div>
+                <div class="user">
+                    <i class="fa fa-user"></i>
+                    <h2>Lujain Shqer</h2>
+                    <h3>Date: 30/5/2001</h3>
+                </div>
+                <div class="user ">
+                    <i class="fa fa-user"></i>
+                    <h2>Lujain Shqer</h2>
+                    <h3>Date: 30/5/2001</h3>
+                </div>
+                <div class="user">
+                    <i class="fa fa-user"></i>
+                    <h2>Lujain Shqer</h2>
+                    <h3>Date: 30/5/2001</h3>
+                </div>
+                <div class="user">
+                    <i class="fa fa-user"></i>
+                    <h2>Lujain Shqer</h2>
+                    <h3>Date: 30/5/2001</h3>
+                </div>
+                <div class="user">
+                    <i class="fa fa-user"></i>
+                    <h2>Lujain Shqer</h2>
+                    <h3>Date: 30/5/2001</h3>
+                </div>
             </div>
         </div>
-
     </div>
-    <!--End Diposit history-->
+    <!-- End Refeeral Of Users-->
+
 
     <script src="js/jq.js"></script>
     <script src="js/popper.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
+    <script src="api/info.js"></script>
     <script src="api/auth.js"></script>
-    <script src="api/deposit-history.js"></script>
 </body>
 
 </html>

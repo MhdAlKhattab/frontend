@@ -1,0 +1,84 @@
+/* Start Deposit Withdraw Investment */
+.withdraw,
+.users{
+    background-image: url('../image/bubble2.png');
+    min-height: 100vh;
+    background-size: cover;
+}
+.withdraw .row,
+.users .row{
+    justify-content: space-between;
+}
+.withdraw .card{
+    padding: 5vmin;
+    background-color: rgb(92 151 215 / 40%);
+    margin-bottom: 5vmin;
+    color: aliceblue;
+    position: relative;
+    margin: 5vmin auto;
+}
+.withdraw .card i{
+    position: absolute;
+    top: 1vmin;
+    right: 3vmin;
+    color: #29e2ff;
+}
+.withdraw .card .footer{
+    margin-top: 2vmin;
+}
+  
+  .withdraw ul li,
+  .users ul li {
+    padding: 1vmin 3vmin;
+    margin-right: 5px;
+    border-radius: 5px;
+    display: inline-block;
+    font-size: 2.5vmin;
+    font-weight: 600;
+    color: #FFF;
+    border: 2px solid #FFF;
+    -webkit-transition: all .3s ease-in-out;
+    -moz-transition: all .3s ease-in-out;
+    -o-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
+  }
+  
+  .withdraw ul li.active,
+  .withdraw ul li:hover,
+  .users ul li.active,
+  .users ul li:hover {
+    background-color: #FFF;
+    border: 2px solid #FFF;
+    color: #466795
+  }
+  
+  .withdraw ul li:hover ,
+  .users ul li:hover {
+    cursor: pointer
+  }
+  /* End Deposit Withdraw Investment */
+  /* Start Users */
+  .users .card{
+    margin-bottom: 5vmin;
+    background-color: rgb(92 151 215 / 40%);
+    color: aliceblue;
+    margin: 5vmin auto;
+    border-radius: 10px;
+  }
+  .users .card i{
+    font-size: 7vmin;
+    color: #318ddd;
+    background-color: aliceblue;
+    border-radius: 10px 10px 0 0;
+    padding: 5vmin;
+  }
+  .users .card h2{
+    margin: 2vmin 0;
+    padding: 5vmin;
+  }
+  .users .card button{
+    margin-top: 2vmin;
+  }
+  /* End Users */
+
+  
