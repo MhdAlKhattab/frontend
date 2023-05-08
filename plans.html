@@ -10,13 +10,13 @@
   <link rel="stylesheet" href="css/style-control.css">
   <link rel="stylesheet" href="css/style.css">
 
-  <title>Acount</title>
+  <title>Control Balane</title>
 
   <script>
     // If we do not login yet
-    if (localStorage.getItem("access_token") == null) {
-      window.location = 'login.html';
-    }
+    // if (localStorage.getItem("access_token") == null) {
+    //   window.location = 'login.html';
+    // }
   </script>
 </head>
 
@@ -34,8 +34,9 @@
       </button>
       <div class="collapse navbar-collapse" id="main-nav">
         <ul class="navbar-nav ml-auto">
+
           <li class="nav-item " id="home">
-            <a class="nav-link " href="#">Control Panal</a>
+            <a class="nav-link " href="control.html">Control Panal</a>
           </li>
           <li class="nav-item" id="about-us">
             <a class="nav-link" href="investment.html">Investment</a>
@@ -46,18 +47,18 @@
           <li class="nav-item" id="note">
             <a class="nav-link" href="withdraw.html">Withdraw</a>
           </li>
-          <li class="dropdown nav-item active">
-            <a href="#" class="dropdown-toggle nav-link" data-toggle="dropdown">Account<span class="caret"></span></a>
+          <li class="dropdown nav-item">
+            <a href="#" class="dropdown-toggle nav-link" data-toggle="dropdown">Account <span class="caret"></span></a>
             <ul class="dropdown-menu" role="menu">
               <li><a href="account.html">Change Password</a></li>
-              <li id="checkOut"><a href="#">Check Out</a></li>
+              <li id="checkOut"><a href="#">Cheak Out</a></li>
             </ul>
           </li>
-          <li class="dropdown nav-item">
-            <a href="#" class="dropdown-toggle nav-link" data-toggle="dropdown">Referral <span class="caret"></span></a>
+          <li class="dropdown active nav-item">
+            <a href="#" class="dropdown-toggle nav-link" data-toggle="dropdown">Plans <span class="caret"></span></a>
             <ul class="dropdown-menu" role="menu">
-              <li><a href="users.html">Users</a></li>
-              <li id="checkOut"><a href="plans.html">Plans</a></li>
+              <li class="active"><a href="control.html">Referral</a></li>
+              <li  ><a href="users.html">Users</a></li>
             </ul>
           </li>
         </ul>
@@ -65,29 +66,37 @@
 
     </div>
   </nav>
-
-  <!--Start Login-->
-  <div class="login">
-    <div class="overlay padding-top">
-      <form class="center-block" id="changePassportForm">
-        <h3 class="text-center log-header color">Change Password</h3>
-        <input class="form-control" type="password" name="old_password" placeholder="Old Password" required />
-        <input class="form-control" type="password" name="new_password" placeholder="New Password" required />
-        <input class="form-control" type="password" name="confirm_new_password" placeholder="Confirm Password"
-          required />
-        <div class="error-message text-center"></div>
-        <div class="log-footer">
-          <button class=" btn btn-success" value="Submit">Submit</button>
+  <!-- End Navbar -->
+  <!--Start Plans Referral-->
+  <div class="referral padding-top">
+    <div class="container">
+        <div class="control-table">
+            <table id="controlPanel">
+              <tr style="background-color: black;">
+                <th>Name</th>
+                <th>Date</th>
+                <th>Quantity</th>
+                <th>Way</th>
+              </tr>
+              <tr>
+                <td colspan="4" style="text-align: center;color: white;">Lodding..</td>
+              </tr>
+            </table>
+          </div>
+    
+    
+    
         </div>
-      </form>
-      <a href="control.html" class="btn"><i class="fa fa-chevron-right pointer" id=""></i></a>
+      </div>
     </div>
   </div>
-  <!--End Login-->
+  <!--End Plans Referral-->
+
 
   <script src="js/jq.js"></script>
   <script src="js/popper.min.js"></script>
   <script src="js/bootstrap.min.js"></script>
+  <script src="api/info.js"></script>
   <script src="api/auth.js"></script>
 </body>
 

@@ -314,13 +314,53 @@ td {
   
 /* End Account */
 /* Start Referral */
-.referral h3~p {
-    border: 4 px solid #103e57;
-    padding: 2vh;
-    border-radius: 5px;
-    color: #FFF;
-    border: 2px solid #ccc;
+.referral{
+    background-image: url('../image/bubble.jpg');
+    background-size: cover;
+    min-height: 100vh;
+    padding-bottom: 5vh;
+    color: white;
 }
+.referral .users {
+    justify-content: space-between;
+}
+.referral .users .user{
+    margin: 5vmin auto;
+    border: 1px solid #CCC;
+    border-radius: 5px;
+    width: 22%;
+    padding-bottom: 2vmin;
+}
+.referral .users i{
+    font-size: 5vmin;
+    color: #318ddd;
+    padding: 3vmin;
+    background: aliceblue;
+    border-radius: 50%;
+    position: relative;
+    top: -26px;
+}
+@media (max-width: 991px) {
+    .referral .users .user{
+        width: 30%;
+    }
+}
+
+@media (max-width: 768px) {
+    .referral .users .user{
+        width: 45%;
+    }
+}
+@media (max-width: 540px) {
+    .referral .users .user{
+        width: 90%;
+    }
+    .referral .users i {
+        top: -15px;
+        font-size: 10vmin;
+    }
+}
+
 /* End Referral */
 /* Start Modal */
 .modal-content h4.head{
