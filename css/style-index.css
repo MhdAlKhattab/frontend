@@ -278,6 +278,7 @@
     background-image: url('../image/login&sign.jpg');
     background-size: cover;
     min-height: 100vh;
+    padding-bottom: 5vmin;
   }
   
   .login form {
@@ -292,7 +293,7 @@
   }
   
   .login form .log-header {
-    padding: 4vh 0;
+    padding: 4vh 2vmin;
     background-color: aliceblue;
     font-weight: 600;
   }
@@ -341,5 +342,7 @@
   .login form p a {
     color: #28a745;
   }
-  
+  .forget-pas button{
+    width: 100% !important;
+  }
   /* End LogIn & Sign Up*/

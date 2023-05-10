@@ -1,5 +1,6 @@
 /* Start control */
-.control,.referral {
+.control,
+.referral {
     background-image: url('../image/bubble.jpg');
     background-size: cover;
     background-attachment: fixed;
@@ -29,7 +30,8 @@
     background: #2e4664;
     border-radius: 5px;
 }
-.con-history{
+
+.con-history {
     color: #FFF;
     background: #466795;
     display: inline-block;
@@ -40,35 +42,37 @@
     margin-right: 5vh;
     border-radius: 5px;
 }
-.con-history:hover{
+
+.con-history:hover {
     text-decoration: none;
     color: #FFF;
 }
 
- .control-table {
+.control-table {
     overflow-x: auto;
     background: #86adcc;
 }
 
- table {
+table {
     border-collapse: collapse;
     border-spacing: 0;
     width: 100%;
     border: 1px solid #ddd;
 }
 
- th {
+th {
     color: #103e57;
     font-size: 3vmin;
 }
 
- th,
+th,
 td {
     text-align: left;
     padding: 10px;
     font-weight: 500;
 }
- th{
+
+th {
     color: white;
     font-weight: 700;
 }
@@ -95,6 +99,11 @@ td {
     border: 1px solid #103e57;
     padding: 5vmin;
     position: relative;
+    transition: .5s;
+}
+.investments .card:hover{
+    width: 23%;
+    box-shadow: 10px 10px 10px #151515;
 }
 
 .investments .card .card-header {
@@ -119,6 +128,7 @@ td {
     justify-content: center;
     left: 25%;
 }
+
 /* End Investments*/
 
 /* Start Deposit & Withdraw*/
@@ -217,12 +227,13 @@ td {
 /* End DepositerDetails & Withdraw Details */
 
 /* Start  History */
-.history{
+.history {
     background-image: url('../image/bubble.jpg');
     min-height: 100vh;
     background-size: cover;
 }
-.history-button{
+
+.history-button {
     padding: 1vh;
     color: #FFF;
     border-radius: 5px;
@@ -232,106 +243,128 @@ td {
     font-size: 3vmin;
     background-color: #466795;
 }
-.history-button:hover{
+
+.history-button:hover {
     color: #FFF;
 }
- .control-table p{
+
+.control-table p {
     margin: 0;
 }
- .control-table span{
+
+.control-table span {
     padding: 5px;
     color: #fff8f8;
     font-weight: 600;
 }
- .control-table i{
+
+.control-table i {
     color: #004085;
     cursor: pointer;
 }
-.control-table h5{
+
+.control-table h5 {
     line-height: 2;
     font-size: 3vmin;
 }
-.status{
+
+.status {
     color: #FFF !important;
     background: #28a745;
     text-align: center;
     padding: 1vmin;
 }
-.Panding{
+
+.Panding {
     color: #FFF !important;
     background: #ddd91a;
     text-align: center;
 }
-.Complete{
+
+.Complete {
     color: #FFF !important;
     background: #11dd33;
     text-align: center;
 }
-.Canceled{
+
+.Canceled {
     color: #FFF !important;
     background: #db1212;
     text-align: center;
 }
-.Progress{
+
+.Progress {
     color: #FFF !important;
     background: #0b0ff1;
     text-align: center;
 }
+
 /* End  History */
 /* Start Account */
-  .login {
+.login {
     background-image: url('../image/login&sign.jpg');
     background-size: cover;
     min-height: 100vh;
-  }
-  
-  .login form {
+}
+
+.login form {
     width: 30%;
     margin: 0 auto;
     border: 1px solid #CCC;
     border-radius: 5px;
     background: white;
-  }
-  .login form .log-header {
+}
+
+.login form .log-header {
     padding: 4vh 0;
     background-color: aliceblue;
     font-weight: 600;
-  }
-  
-  
-  .login form input {
+}
+
+
+.login form input {
     border: 0;
     border-bottom: 1px solid #c5ccd3;
     width: 90%;
     border-radius: 0;
     margin: 0 auto;
     padding: 3vh;
-  }
+}
 
-  .login form .log-footer button{
+.login form .log-footer button {
     width: 100%;
-  }
-  
+}
+
 /* End Account */
 /* Start Referral */
-.referral{
+.referral {
     background-image: url('../image/bubble.jpg');
     background-size: cover;
     min-height: 100vh;
     padding-bottom: 5vh;
     color: white;
 }
+
+.referral p{
+    border: 2px solid #004085;
+    padding: 2vmin;
+    border-radius: 5px;
+}
+
 .referral .users {
     justify-content: space-between;
 }
-.referral .users .user{
+
+.referral .users .user {
     margin: 5vmin auto;
     border: 1px solid #CCC;
     border-radius: 5px;
     width: 22%;
     padding-bottom: 2vmin;
+    background-color: rgb(0 64 133 / 60%);
 }
-.referral .users i{
+
+.referral .users i {
     font-size: 5vmin;
     color: #318ddd;
     padding: 3vmin;
@@ -340,32 +373,47 @@ td {
     position: relative;
     top: -26px;
 }
+
 @media (max-width: 991px) {
-    .referral .users .user{
+    .referral .users .user {
         width: 30%;
     }
+    .investments .card:hover{
+        width: 42% ;
+    }
+
 }
 
 @media (max-width: 768px) {
-    .referral .users .user{
+    .referral .users .user {
         width: 45%;
     }
+
 }
+
+
 @media (max-width: 540px) {
-    .referral .users .user{
+    .referral .users .user {
         width: 90%;
     }
+
     .referral .users i {
         top: -15px;
         font-size: 10vmin;
     }
+    .investments .card:hover{
+        width: 92% ;
+    }
+
+
 }
 
 /* End Referral */
 /* Start Modal */
-.modal-content h4.head{
+.modal-content h4.head {
     color: #103e57;
 }
+
 .modal-content {
     margin-top: 15vh;
 }
@@ -415,7 +463,8 @@ td {
     width: 2%;
     color: #103e57;
 }
-.modal-content .modal-body .signup-popup p{
+
+.modal-content .modal-body .signup-popup p {
     color: #004085;
     font-size: 5vmin;
     font-weight: 800;
