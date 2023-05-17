@@ -32,7 +32,7 @@ $(document).ready(function () {
                 $.each(items.data, function (key, item) {
 
                     if (item.state == 0) {
-                        state = `<span class="Panding">Panding</span>`;
+                        state = `<span class="Panding">Pendding</span>`;
                     } else if (item.state == 1) {
                         state = `<span class="Progress">In Progress</span>`;
                     } else if (item.state == 2) {

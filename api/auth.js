@@ -107,7 +107,6 @@ $(document).ready(function () {
             data: $("#changePasswordForm").serialize(),
             dataType: "json",
             success: function (data) {
-                localStorage.setItem('access_token', data.access_token);
                 $(location).attr('href', 'control.html');
             },
             error: function (error) {
