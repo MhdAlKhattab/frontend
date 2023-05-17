@@ -100,6 +100,7 @@ th {
     padding: 5vmin;
     position: relative;
     transition: .5s;
+    margin-bottom: 2vh;
 }
 .investments .card:hover{
     width: 23%;

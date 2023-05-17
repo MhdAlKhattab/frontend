@@ -119,6 +119,7 @@
     padding: 5vmin;
     position: relative;
     transition: .2s;
+    margin-bottom: 2vh;
   }
   .plans .card:hover {
     padding: 6vmin;
