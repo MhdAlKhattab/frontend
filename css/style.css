@@ -269,7 +269,7 @@ body {
   }
 
   .calculator h1 {
-    padding-top: 10vh;
+    padding-top: 2vh;
   }
 
   .calculator form select {
@@ -287,8 +287,6 @@ body {
   .progress {
     height: 1vh;
   }
-
-
 }
 
 /* Media */

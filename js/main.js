@@ -68,5 +68,13 @@ $(document).ready(function () {
         }, 2000);
 
     }); 
+    $('#faq').click(function () {
+        $(this).addClass('active');
+        $(this).siblings().removeClass('active')
+        $("html , body").animate({
+            scrollTop: $('.faq').offset().top
+        }, 2000);
+
+    }); 
 
 });
