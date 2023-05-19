@@ -13,12 +13,16 @@
     position: relative;
     padding: 2vmin 4vmin;
     background-color: #466795;
-    box-shadow: 5px 5px 8px #272727;
     border-radius: 5px;
     margin-bottom: 5vh;
-    background-color: #FFF;
+    background-color: rgb(255 255 255 / 80%);
+    transition: .5s;
 }
+.control .control-ba:hover {
+    background-color: rgb(255 255 255 / 100%);
+    border: .5px solid #007bff;
 
+}
 
 .control .control-ba i {
     position: absolute;
@@ -50,6 +54,8 @@
 
 .control-table {
     overflow-x: auto;
+    overflow-y: auto;
+    max-height: 55vh;
     background: #86adcc;
 }
 
@@ -103,8 +109,8 @@ th {
     margin-bottom: 2vh;
 }
 .investments .card:hover{
-    width: 23%;
-    box-shadow: 10px 10px 10px #151515;
+    background-color: rgba(0, 14, 27, 1);
+    border-color: #007bff ;
 }
 
 .investments .card .card-header {
@@ -140,9 +146,14 @@ th {
 }
 
 .deposit .card {
-    background-color: rgba(0, 0, 0, 1);
+    background-color: rgba(0, 0, 0, .8);
     color: #FFF;
     box-shadow: 5px 5px 8px #272727;
+    transition: .5s;
+}
+.deposit .card:hover{
+    background-color: rgba(0, 0, 0, 1);
+    border-color: #007bff ;
 }
 
 .deposit img {
@@ -363,7 +374,13 @@ th {
     width: 22%;
     padding-bottom: 2vmin;
     background-color: rgb(0 64 133 / 60%);
+    transition: .5s;
 }
+.referral .users .user:hover {
+    background-color: rgb(0 64 133 / 100%);
+    border-color: #007bff ;
+}
+
 
 .referral .users i {
     font-size: 5vmin;
@@ -405,7 +422,9 @@ th {
     .investments .card:hover{
         width: 92% ;
     }
-
+    .control-table {
+        max-height: 70vh;
+    }
 
 }
 
