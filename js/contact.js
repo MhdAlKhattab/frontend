@@ -6,9 +6,10 @@ $(document).ready(function () {
         e.preventDefault();
 
         // these IDs from the previous steps
-        emailjs.sendForm('service_bba79bo', 'forex_template', this)
+        emailjs.sendForm('service_0xfumsf', 'template_tbskdxe', this)
             .then(function() {
                 console.log('SUCCESS!');
+                location.reload();
             }, function(error) {
                 console.log('FAILED...', error);
             });
