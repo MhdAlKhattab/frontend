@@ -75,7 +75,7 @@
           <div class="card mb-3">
             <div class="row g-0">
               <div class="col-lg-4">
-                <img src="image/bitcoin-icon-6219383__340.webp" class="img-fluid rounded-start" alt="...">
+                <img src="image/bitcoin.webp" class="img-fluid rounded-start" alt="...">
               </div>
               <div class="col-lg-8">
                 <div class="card-body text-center">
@@ -93,7 +93,7 @@
           <div class="card mb-3">
             <div class="row g-0">
               <div class="col-lg-4">
-                <img src="image//perfectmoney-600x361.jpg" class="img-fluid rounded-start" alt="...">
+                <img src="image//perfectmoney.jpg" class="img-fluid rounded-start" alt="...">
               </div>
               <div class="col-lg-8">
                 <div class="card-body text-center">
@@ -111,11 +111,11 @@
           <div class="card mb-3">
             <div class="row g-0">
               <div class="col-lg-4 ">
-                <img src="image/payeer-thumbnail.png" class="img-fluid rounded-start" alt="...">
+                <img src="image/usdt.jpg" class="img-fluid rounded-start" alt="...">
               </div>
               <div class="col-lg-8">
                 <div class="card-body text-center">
-                  <h3 class="card-title">Payeer</h3>
+                  <h3 class="card-title">USDT</h3>
                   <h5 class="card-title">Limit : 10 - 500000 USD</h5>
                   <h5 class="card-title">Charge - 0 USD + 1.99%</h5>
                   <a class="btn" type="button" class="btn btn-primary" data-toggle="modal"
@@ -129,15 +129,33 @@
           <div class="card mb-3">
             <div class="row g-0">
               <div class="col-lg-4">
-                <img src="image/lite.png" class="img-fluid rounded-start" alt="...">
+                <img src="image/Etherum.jpg" class="img-fluid rounded-start" alt="...">
               </div>
               <div class="col-lg-8">
                 <div class="card-body text-center">
-                  <h3 class="card-title">LiteCoin</h3>
+                  <h3 class="card-title">Etherum</h3>
                   <h5 class="card-title">Limit : 10 - 500000 USD</h5>
                   <h5 class="card-title">Charge - 0 USD + 1.99%</h5>
                   <a class="btn" type="button" class="btn btn-primary" data-toggle="modal"
                     data-target=".modal4">Deposit</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 last">
+          <div class="card mb-3">
+            <div class="row g-0">
+              <div class="col-lg-4">
+                <img src="image/another.webp" class="img-fluid rounded-start" alt="...">
+              </div>
+              <div class="col-lg-8">
+                <div class="card-body text-center">
+                  <h3 class="card-title">Other Method</h3>
+                  <h5 class="card-title">Limit : 10 - 500000 USD</h5>
+                  <h5 class="card-title">Charge - 0 USD + 1.99%</h5>
+                  <a class="btn" type="button" class="btn btn-primary" data-toggle="modal"
+                    data-target=".modal5">Deposit</a>
                 </div>
               </div>
             </div>
@@ -208,7 +226,7 @@
     aria-hidden="true">
     <div class="modal-dialog modal-lg">
       <div class="modal-content">
-        <h4>Payment By <span class="lite">Payeer</span></h4>
+        <h4>Payment By <span class="usdt">USDT</span></h4>
         <div class="modal-body">
           <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
               aria-hidden="true">&times;</span></button>
@@ -235,7 +253,7 @@
     aria-hidden="true">
     <div class="modal-dialog modal-lg">
       <div class="modal-content">
-        <h4>Payment By <span class="lite">LiteCoin</span></h4>
+        <h4>Payment By <span class="etherum">Etherum</span></h4>
         <div class="modal-body">
           <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
               aria-hidden="true">&times;</span></button>
@@ -247,6 +265,44 @@
                 <i class="fa fa-dollar"></i>
                 <div class="modal-footer">
                   <button type="submit" class="btn">Next</a>
+                    <button class="btn btn-danger button delete" data-dismiss="modal">Close</button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+    <!--Modal 5-->
+    <div class="modal fade modal5" id="modal5" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog modal-lg ">
+      <div class="modal-content last-modal">
+        <h4>Payment By <span class="another">Other Method</span></h4>
+        <div class="modal-body">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+              aria-hidden="true">&times;</span></button>
+          <div class="row">
+            <div class="col-sm-12 text-center col-xs-height">
+              <form class="signup-popup deposit-form" data-method="lite">
+                <label class="btn-block">Send To Wallet Id:</label>
+                <input class="col-xs-12" type="text" name="amount" placeholder="Please Contact Us On Telegram" disabled>
+                <label class="btn-block">Deposit Amount:</label>
+                <input class="col-xs-12" type="text" name="amount"  required>
+                <label class="btn-block">Amount With Commission:</label>
+                <input class="col-xs-12" type="text" name="amount"  required>
+                <label class="btn-block">Your Wallet Id:</label>
+                <input class="col-xs-12" type="text" name="amount"  required>
+                <label class="btn-block">Operation Id:</label>
+                <input class="col-xs-12" type="text" name="amount" required>
+                <label class="put-img btn" for="image_uploads"><i class="fa fa-upload"></i> Choose an image</label>
+                <input type="file" id="image_uploads" name="photo" accept=".jpg, .jpeg, .png" required />
+                <div class="preview">
+                </div>
+                <input class="col-xs-12" type="text" name="amount" placeholder="Your Deposit Request Will Be Aproved Wiyhin 48 Hours" disabled>
+                <div class="modal-footer">
+                  <button type="submit" class="btn">Request</a>
                     <button class="btn btn-danger button delete" data-dismiss="modal">Close</button>
                 </div>
               </form>
