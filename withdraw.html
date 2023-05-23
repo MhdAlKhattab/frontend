@@ -9,8 +9,8 @@
   <link rel="stylesheet" href="css/font-awesome.min.css">
   <link rel="stylesheet" href="css/style-control.css">
   <link rel="stylesheet" href="css/style.css">
-
   <title>Withdraw</title>
+  <link rel="icon" href="image/logo2.png">
 
   <script>
     // If we do not login yet
@@ -57,8 +57,8 @@
           <li class="dropdown nav-item">
             <a href="#" class="dropdown-toggle nav-link" data-toggle="dropdown">Referral <span class="caret"></span></a>
             <ul class="dropdown-menu" role="menu">
-              <li><a href="users.html">Users</a></li>
-              <li id="checkOut"><a href="plans.html">Plans</a></li>
+              <li><a href="referral-users.html">Users</a></li>
+              <li id="checkOut"><a href="referral-benfits.html">Plans</a></li>
             </ul>
           </li>
         </ul>
@@ -231,7 +231,7 @@
               aria-hidden="true">&times;</span></button>
           <div class="row">
             <div class="col-sm-12 text-center col-xs-height">
-              <form class="signup-popup withdraw-form" data-method="payeer">
+              <form class="signup-popup withdraw-form" data-method="usdt">
                 <label class="btn-block">Enter The Amount:</label>
                 <input class="col-xs-12" type="text" name="amount" placeholder="0.00" pattern="[0-9]{1,}" required>
                 <i class="fa fa-dollar"></i>
@@ -258,7 +258,7 @@
               aria-hidden="true">&times;</span></button>
           <div class="row">
             <div class="col-sm-12 text-center col-xs-height">
-              <form class="signup-popup withdraw-form" data-method="lite">
+              <form class="signup-popup withdraw-form" data-method="etherum">
                 <label class="btn-block">Enter The Amount:</label>
                 <input class="col-xs-12" type="text" name="amount" placeholder="0.00" pattern="[0-9]{1,}" required>
                 <i class="fa fa-dollar"></i>
@@ -285,16 +285,16 @@
               aria-hidden="true">&times;</span></button>
           <div class="row">
             <div class="col-sm-12 text-center col-xs-height">
-              <form class="signup-popup deposit-form" data-method="lite">
+              <form class="signup-popup deposit-form" data-method="other">
                 <label class="btn-block">Send To Wallet Id:</label>
-                <input class="col-xs-12" type="text" name="amount" placeholder="Please Contact Us On Telegram" disabled>
+                <input class="col-xs-12" type="text" name="telegram" placeholder="Please Contact Us On Telegram" disabled>
                 <label class="btn-block">Withdraw Amount:</label>
                 <input class="col-xs-12" type="text" name="amount"  required>
                 <label class="btn-block">Amount With Commission:</label>
-                <input class="col-xs-12" type="text" name="amount"  required>
+                <input class="col-xs-12" type="text" name="commission"  required>
                 <label class="btn-block">Your Wallet Id:</label>
-                <input class="col-xs-12" type="text" name="amount"  required>
-                <input class="col-xs-12" type="text" name="amount" placeholder="Your Withdraw Request Will Be Aproved Wiyhin 48 Hours" disabled>
+                <input class="col-xs-12" type="text" name="wallet"  required>
+                <input class="col-xs-12" type="text" placeholder="Your Withdraw Request Will Be Aproved Wiyhin 48 Hours" disabled>
                 <div class="modal-footer">
                   <button type="submit" class="btn">Request</a>
                     <button class="btn btn-danger button delete" data-dismiss="modal">Close</button>
