@@ -203,21 +203,27 @@ th {
 .details .card input {
     margin-bottom: 2vh;
     outline: none;
-    width: 80%;
+    width: 100%;
     background: transparent;
     border: 1px solid #797979;
     color: #FFF;
+    font-size: 4vmin;
 }
 
-.details .card .waste {
+.details .card .wallet {
     color: cadetblue;
     font-weight: 800;
+}
+.details .qrwallet{
+    width: 50%;
+    margin-bottom: 2vmin;
 }
 
  .put-img {
     background: #28a745;
     padding: 1vh;
     border-radius: 5px;
+    white-space: break-spaces;
 }
 
   .preview {
@@ -401,12 +407,18 @@ th {
     .investments .card:hover{
         width: 42% ;
     }
+    .preview {
+        width: 45%;
+    }
 
 }
 
 @media (max-width: 768px) {
     .referral .users .user {
         width: 45%;
+    }
+    .preview {
+        width: 70%;
     }
 
 }
@@ -426,6 +438,9 @@ th {
     }
     .control-table {
         max-height: 70vh;
+    }
+    .preview {
+        width: 95%;
     }
 
 }
@@ -508,7 +523,7 @@ th {
     background: #28a745;
 }
 label.put-img{
-    margin-bottom: 1vmin;
+    margin-bottom: 3vmin;
     color: white !important;
 }
 label.put-img .fa-upload{
