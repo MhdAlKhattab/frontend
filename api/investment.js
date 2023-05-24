@@ -1,5 +1,26 @@
 $(document).ready(function () {
 
+    getInvestState();
+
+    // Get Invest State
+    function getInvestState(){
+        $.ajax({
+            url: "http://127.0.0.1:8000/api/get-invest-state",
+            headers: { "Authorization": "Bearer " + localStorage.getItem('access_token') },
+            dataType: "json",
+            success: function (data) {
+                console.log(data.data);
+
+                if(data.data == 0){
+                    $('#cards').empty().append('<div class="col-12 youcanot">Sorry, You Can Not Invest Now !</div>');
+                }
+            },
+            error: function () {
+                console.log("Error");
+            }
+        });
+    }
+
     // Start Add Investment
     $('body').on('submit', '.investment-form', function (e) {
         e.preventDefault();

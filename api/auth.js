@@ -149,6 +149,8 @@ $(document).ready(function () {
                 localStorage.removeItem('withdraw-amount');
                 localStorage.removeItem('deposit-method');
                 localStorage.removeItem('deposit-amount');
+                localStorage.removeItem('deposit-image');
+                localStorage.removeItem('deposit-address');
                 $(location).attr('href', 'login.html');
             },
             error: function (error) {

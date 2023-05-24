@@ -48,4 +48,10 @@ $(document).ready(function () {
     var total_amount = amount + (amount * 2) / 100;
     $('#deposit-amount').text(amount).next().text(total_amount);
 
+    // Set Image
+    $('#QR').attr('src', 'image/' + localStorage.getItem('deposit-image'));
+
+    // Set Address
+    $('#Address').text(localStorage.getItem('deposit-address'));
+
 });

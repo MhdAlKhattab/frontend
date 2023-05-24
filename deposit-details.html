@@ -15,13 +15,13 @@
 
   <script>
     // If we do not login yet
-    if (localStorage.getItem("access_token") == null) {
-      window.location = 'login.html';
-    }
+    // if (localStorage.getItem("access_token") == null) {
+    //   window.location = 'login.html';
+    // }
 
-    if(localStorage.getItem("deposit-method") == null){
-      window.location = 'deposit.html';
-    }
+    // if(localStorage.getItem("deposit-method") == null){
+    //   window.location = 'deposit.html';
+    // }
   </script>
 </head>
 
@@ -79,8 +79,8 @@
               class="span"> 0.0 </span></p>
           <p>You Have to Follow The Instruction:</p>
           <p>You Have To Send It To This Waste</p>
-          <img class="qrwallet" src="image/eth.jpg">
-          <p class="wallet">p0834hfg903280</p>
+          <img class="qrwallet" id="QR" src="">
+          <p class="wallet" id="Address"></p>
           <br>
           <p>If you Have Any Problem Call Us</p>
           <br>

@@ -215,6 +215,7 @@ th {
     font-weight: 800;
 }
 .details .qrwallet{
+    border-radius: 10px;
     width: 50%;
     margin-bottom: 2vmin;
 }

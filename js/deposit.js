@@ -48,9 +48,13 @@ $(document).ready(function () {
 
        localStorage.setItem("deposit-amount", this.children[1].value);
        localStorage.setItem("deposit-method", $(this).data('method'));
+       localStorage.setItem("deposit-image", $(this).data('image'));
+       localStorage.setItem("deposit-address", $(this).data('address'));
 
         console.log(this.children[1].value);
         console.log($(this).data('method'));
+        console.log($(this).data('image'));
+        console.log($(this).data('address'));
 
         $(location).attr('href', 'deposit-details.html');
     });   

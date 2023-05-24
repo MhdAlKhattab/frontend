@@ -151,6 +151,12 @@ body {
   color: #EEE;
   font-size: 4vmin;
 }
+.youcanot{
+  color: #FFF;
+  font-size: 5vmin;
+  text-align: center;
+  margin-top: 10vh;
+}
 
 /* End FramWork */
 /* Media */

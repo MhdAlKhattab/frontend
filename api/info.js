@@ -70,6 +70,7 @@ $(document).ready(function () {
                     `;
 
                 });
+                $('.nodata').remove();
                 $('#controlPanel').empty().append(output);
 
             } else {
@@ -77,7 +78,7 @@ $(document).ready(function () {
 
                 $('.nodata').remove();
 
-                $('#controlPanel').parent().append(`<div class="nodata">There Is No Data.</div>`);
+                $('#controlPanel').empty().append(output).parent().append(`<div class="nodata">There Is No Data.</div>`);
             }
 
         });
@@ -118,6 +119,7 @@ $(document).ready(function () {
                     `;
 
                 });
+                $('.nodata').remove();
                 $('#controlPanel').empty().append(output);
 
             } else {
@@ -126,7 +128,7 @@ $(document).ready(function () {
 
                 $('.nodata').remove();
                 
-                $('#controlPanel').parent().append(`<div class="nodata">There Is No Data.</div>`);
+                $('#controlPanel').empty().append(output).parent().append(`<div class="nodata">There Is No Data.</div>`);
             }
 
         });

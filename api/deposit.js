@@ -1,5 +1,26 @@
 $(document).ready(function () {
 
+    getDepositState();
+
+    // Get Deposit State
+    function getDepositState(){
+        $.ajax({
+            url: "http://127.0.0.1:8000/api/get-deposit-state",
+            headers: { "Authorization": "Bearer " + localStorage.getItem('access_token') },
+            dataType: "json",
+            success: function (data) {
+                console.log(data.data);
+
+                if(data.data == 0){
+                    $('#cards').empty().append('<div class="col-12 youcanot">Sorry, You Can Not Deposit Now !</div>');
+                }
+            },
+            error: function () {
+                console.log("Error");
+            }
+        });
+    }
+
     // Start Add Deposit
     $('body').on('submit', '#depositForm', function(e){
         e.preventDefault();
@@ -21,6 +42,8 @@ $(document).ready(function () {
 
                 localStorage.removeItem('deposit-method');
                 localStorage.removeItem('deposit-amount');
+                localStorage.removeItem('deposit-image');
+                localStorage.removeItem('deposit-address');
             },
             error: function (error) {
                 output = '';
