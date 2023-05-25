@@ -285,22 +285,22 @@
               aria-hidden="true">&times;</span></button>
           <div class="row">
             <div class="col-sm-12 text-center col-xs-height">
-              <form class="signup-popup deposit-form" data-method="other">
+              <form class="signup-popup deposit-form" data-method="other" id="depositForm">
                 <label class="btn-block">Send To Wallet Id:</label>
-                <input class="col-xs-12" type="text" name="telegram" placeholder="Please Contact Us On Telegram" disabled>
+                <input class="contact-telegram" type="text" name="telegram" placeholder="Please Contact Us On Telegram" disabled><a href="#"><i class="fa fa-telegram"></i></a>
                 <label class="btn-block">Deposit Amount:</label>
                 <input class="col-xs-12" type="text" name="amount"  required>
-                <label class="btn-block">Amount With Commission:</label>
-                <input class="col-xs-12" type="text" name="commission" required>
                 <label class="btn-block">Your Wallet Id:</label>
                 <input class="col-xs-12" type="text" name="wallet" required>
+                <label class="btn-block">The Method:</label>
+                <input class="col-xs-12" type="text" name="method" required>
                 <label class="btn-block">Operation Id:</label>
                 <input class="col-xs-12" type="text" name="proccess_id" required>
                 <label class="put-img btn" for="image_uploads"><i class="fa fa-upload"></i> Choose an image</label>
                 <input type="file" id="image_uploads" name="photo" accept=".jpg, .jpeg, .png" required />
                 <div class="preview">
                 </div>
-                <input class="col-xs-12" type="text" placeholder="Your Deposit Request Will Be Aproved Wiyhin 48 Hours" disabled>
+                <input class="col-xs-12" type="text" placeholder="Your Deposit Request Will Be Aproved Within 48 Hours" disabled>
                 <div class="modal-footer">
                   <button type="submit" class="btn">Request</a>
                     <button class="btn btn-danger button delete" data-dismiss="modal">Close</button>

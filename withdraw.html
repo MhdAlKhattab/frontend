@@ -274,8 +274,8 @@
       </div>
     </div>
   </div>
-    <!--Modal 5-->
-    <div class="modal fade modal5" id="modal5" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+  <!--Modal 5-->
+  <div class="modal fade modal5" id="modal5" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
     aria-hidden="true">
     <div class="modal-dialog modal-lg ">
       <div class="modal-content last-modal">
@@ -285,16 +285,18 @@
               aria-hidden="true">&times;</span></button>
           <div class="row">
             <div class="col-sm-12 text-center col-xs-height">
-              <form class="signup-popup deposit-form" data-method="other">
+              <form class="signup-popup deposit-form" data-method="other" id="withdrawForm">
                 <label class="btn-block">Send To Wallet Id:</label>
-                <input class="col-xs-12" type="text" name="telegram" placeholder="Please Contact Us On Telegram" disabled>
+                <input class="contact-telegram" type="text" name="telegram" placeholder="Please Contact Us On Telegram"
+                  disabled><a href="#"><i class="fa fa-telegram"></i></a>
                 <label class="btn-block">Withdraw Amount:</label>
-                <input class="col-xs-12" type="text" name="amount"  required>
-                <label class="btn-block">Amount With Commission:</label>
-                <input class="col-xs-12" type="text" name="commission"  required>
+                <input class="col-xs-12" type="text" name="amount" required>
                 <label class="btn-block">Your Wallet Id:</label>
-                <input class="col-xs-12" type="text" name="wallet"  required>
-                <input class="col-xs-12" type="text" placeholder="Your Withdraw Request Will Be Aproved Wiyhin 48 Hours" disabled>
+                <input class="col-xs-12" type="text" name="wallet" required>
+                <label class="btn-block">The Method:</label>
+                <input class="col-xs-12" type="text" name="method" required>
+                <input class="col-xs-12" type="text" placeholder="Your Withdraw Request Will Be Aproved Within 48 Hours"
+                  disabled>
                 <div class="modal-footer">
                   <button type="submit" class="btn">Request</a>
                     <button class="btn btn-danger button delete" data-dismiss="modal">Close</button>
