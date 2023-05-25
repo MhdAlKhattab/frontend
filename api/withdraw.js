@@ -32,16 +32,16 @@ $(document).ready(function () {
         $.ajax({
             url: "http://127.0.0.1:8000/api/add-withdraw",
             type: "POST",
-            headers: { "Authorization": "Bearer " + localStorage.getItem('access_token') },
+            headers: {"Authorization": "Bearer " + localStorage.getItem('access_token') },
             data: data,
             dataType: "json",
             processData: false,
             contentType: false,
             success: function (data) {
-                $(location).attr('href', 'control.html');
-
                 localStorage.removeItem('withdraw-method');
                 localStorage.removeItem('withdraw-amount');
+
+                $(location).attr('href', 'control.html');
             },
             error: function (error) {
                 output = '';
@@ -61,20 +61,17 @@ $(document).ready(function () {
         });
     });
     // End Add other Withdraw
-    $('body').on('submit', '#withdrawForm', function (e) {
+    $('body').on('submit', '#withdrawOtherForm', function (e) {
         e.preventDefault();
-
-        var data = new FormData(this);
 
         $.ajax({
             url: "http://127.0.0.1:8000/api/add-withdraw",
             type: "POST",
             headers: { "Authorization": "Bearer " + localStorage.getItem('access_token') },
-            data: data,
+            data: $("#withdrawOtherForm").serialize(),
             dataType: "json",
-            processData: false,
-            contentType: false,
             success: function (data) {
+
                 $(location).attr('href', 'control.html');
             },
             error: function (error) {

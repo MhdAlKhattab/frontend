@@ -52,7 +52,6 @@ $(document).ready(function () {
                     <th>Name</th>
                     <th>Date</th>
                     <th>Quantity</th>
-                    <th>Way</th>
                 </tr>
             `;
 
@@ -65,7 +64,6 @@ $(document).ready(function () {
                             <td><h5>${item.user.first_name} ${item.user.last_name}</h5></td>
                             <td><h5>${item.created_at.substring(0,10)}</h5></td>
                             <td><h5>${item.amount}$</h5></td>
-                            <td><h5>${item.method}</h5></td>
                         </tr>
                     `;
 
@@ -101,7 +99,6 @@ $(document).ready(function () {
                     <th>Name</th>
                     <th>Date</th>
                     <th>Quantity</th>
-                    <th>Way</th>
                 </tr>
             `;
 
@@ -114,7 +111,6 @@ $(document).ready(function () {
                             <td><h5>${item.user.first_name} ${item.user.last_name}</h5></td>
                             <td><h5>${item.created_at.substring(0,10)}</h5></td>
                             <td><h5>${item.amount}$</h5></td>
-                            <td><h5>${item.method}</h5></td>
                         </tr>
                     `;
 

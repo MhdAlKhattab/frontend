@@ -64,7 +64,7 @@ $(document).ready(function () {
     });
     // End Add Deposit
      // Start Add other Deposit
-     $('body').on('submit', '#depositForm', function(e){
+     $('body').on('submit', '#depositOtherForm', function(e){
         e.preventDefault();
 
         var data = new FormData(this);
@@ -79,7 +79,6 @@ $(document).ready(function () {
             contentType: false,
             success: function (data) {
                 $(location).attr('href', 'control.html');
-
             },
             error: function (error) {
                 output = '';
