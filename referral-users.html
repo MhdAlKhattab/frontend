@@ -2,91 +2,87 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/font-awesome.min.css">
-    <link rel="stylesheet" href="css/style-control.css">
-    <link rel="stylesheet" href="css/style.css">
-    <title>Referral Users</title>
-    <link rel="icon" href="image/logo2.png">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/font-awesome.min.css">
+  <link rel="stylesheet" href="css/style-control.css">
+  <link rel="stylesheet" href="css/style.css">
+  <title>Referral Users</title>
+  <link rel="icon" href="image/logo2.png">
 
-    <script>
+  <script>
     // If we do not login yet
     // if (localStorage.getItem("access_token") == null) {
     //   window.location = 'login.html';
     // }
-    </script>
+  </script>
 </head>
 
 <body>
-    <!-- Start Navbar -->
-    <nav class=" navbar navbar-expand-lg navbar-light">
-        <div class="container">
+  <!-- Start Navbar -->
+  <nav class=" navbar navbar-expand-lg navbar-light">
+    <div class="container">
 
-            <a class="navbar-brand" href="#">
-                <span><img src="image/logo.png"></span>
-            </a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main-nav"
-                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="main-nav">
-                <ul class="navbar-nav ml-auto">
+      <a class="navbar-brand" href="#">
+        <span><img src="image/logo.png"></span>
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main-nav"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="main-nav">
+        <ul class="navbar-nav ml-auto">
 
-                    <li class="nav-item " id="home">
-                        <a class="nav-link " href="control.html">Control Panal</a>
-                    </li>
-                    <li class="nav-item" id="about-us">
-                        <a class="nav-link" href="investment.html">Investment</a>
-                    </li>
-                    <li class="nav-item" id="plans">
-                        <a class="nav-link" href="deposit.html">Deposit</a>
-                    </li>
-                    <li class="nav-item" id="note">
-                        <a class="nav-link" href="withdraw.html">Withdraw</a>
-                    </li>
+          <li class="nav-item " id="home">
+            <a class="nav-link " href="control.html">Control Panal</a>
+          </li>
+          <li class="nav-item" id="about-us">
+            <a class="nav-link" href="investment.html">Investment</a>
+          </li>
+          <li class="nav-item" id="plans">
+            <a class="nav-link" href="deposit.html">Deposit</a>
+          </li>
+          <li class="nav-item" id="note">
+            <a class="nav-link" href="withdraw.html">Withdraw</a>
+          </li>
+          <li class="dropdown nav-item active">
+            <a href="#" class="dropdown-toggle nav-link" data-toggle="dropdown">Referral <span class="caret"></span></a>
+            <ul class="dropdown-menu" role="menu">
+              <li><a href="referral-users.html">Users</a></li>
+              <li><a href="referral-benfits.html">Plans</a></li>
+            </ul>
+          </li>
+          <li class="dropdown nav-item">
+            <a href="#" class="dropdown-toggle nav-link" data-toggle="dropdown">Account <span class="caret"></span></a>
+            <ul class="dropdown-menu" role="menu">
+              <li><a href="change-password.html">Change Password</a></li>
+              <li id="checkOut"><a href="#">Cheak Out</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
 
-                    <li class="dropdown nav-item">
-                        <a href="#" class="dropdown-toggle nav-link" data-toggle="dropdown">Account <span
-                                class="caret"></span></a>
-                        <ul class="dropdown-menu" role="menu">
-                            <li><a href="change-password.html">Change Password</a></li>
-                            <li id="checkOut"><a href="#">Cheak Out</a></li>
-                        </ul>
-                    </li>
-                    <li class="dropdown nav-item active">
-                        <a href="#" class="dropdown-toggle nav-link" data-toggle="dropdown">Referral <span
-                                class="caret"></span></a>
-                        <ul class="dropdown-menu" role="menu">
-                            <li><a href="referral-users.html">Users</a></li>
-                            <li><a href="referral-benfits.html">Plans</a></li>
-                        </ul>
-                    </li>
-                </ul>
-            </div>
-
-        </div>
-    </nav>
-    <!-- End Navbar -->
-    <!--Start Refeeral Of Users-->
-    <!--Start Refeeral Of Users-->
-    <div class="referral padding-top">
-        <div class="container">
-            <p>http:/bjd/ndh jdnvlj kjvbk</p>
-            <div class="users text-center row" id="user-ref">
-                <!-- Get-->
-            </div>
-        </div>
     </div>
-    <!-- End Refeeral Of Users-->
+  </nav>
+  <!-- End Navbar -->
+  <!--Start Refeeral Of Users-->
+  <!--Start Refeeral Of Users-->
+  <div class="referral padding-top">
+    <div class="container">
+      <div class="users text-center row" id="user-ref">
+        <!-- Get-->
+      </div>
+    </div>
+  </div>
+  <!-- End Refeeral Of Users-->
 
 
-    <script src="js/jq.js"></script>
-    <script src="js/popper.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="api/referralUser.js"></script>
+  <script src="js/jq.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="api/referralUser.js"></script>
 
 </body>
 

@@ -11,8 +11,11 @@ $(document).ready(function () {
             success: function (data) {
                 console.log(data.data);
 
-                if(data.data == 0){
-                    $('#cards').empty().append('<div class="col-12 youcanot">Sorry, You Can Not Deposit Now !</div>');
+                if(data.data == 1){
+                    $('.youcanot').css('display', 'none');
+                    $('#cards').css('display', 'flex');
+                }else{
+                    $('.youcanot').text('Sorry, You Can Not Deposit Now !');
                 }
             },
             error: function () {

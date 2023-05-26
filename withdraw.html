@@ -46,19 +46,18 @@
           <li class="nav-item active" id="note">
             <a class="nav-link" href="#">Withdraw</a>
           </li>
-
-          <li class="dropdown nav-item">
-            <a href="#" class="dropdown-toggle nav-link" data-toggle="dropdown">Account <span class="caret"></span></a>
-            <ul class="dropdown-menu" role="menu">
-              <li><a href="change-password.html">Change Password</a></li>
-              <li id="checkOut"><a href="#">Cheak Out</a></li>
-            </ul>
-          </li>
           <li class="dropdown nav-item">
             <a href="#" class="dropdown-toggle nav-link" data-toggle="dropdown">Referral <span class="caret"></span></a>
             <ul class="dropdown-menu" role="menu">
               <li><a href="referral-users.html">Users</a></li>
               <li id="checkOut"><a href="referral-benfits.html">Plans</a></li>
+            </ul>
+          </li>
+          <li class="dropdown nav-item">
+            <a href="#" class="dropdown-toggle nav-link" data-toggle="dropdown">Account <span class="caret"></span></a>
+            <ul class="dropdown-menu" role="menu">
+              <li><a href="change-password.html">Change Password</a></li>
+              <li id="checkOut"><a href="#">Cheak Out</a></li>
             </ul>
           </li>
         </ul>
@@ -70,7 +69,8 @@
   <div class="withdraw deposit padding-top">
     <div class="container">
       <a href="history-withdraw.html" class="history-button btn">Withdraw History</a>
-      <div class="row" id="cards">
+      <div class="youcanot"></div>
+      <div class="row" id="cards" style="display: none;">
         <div class="col-md-6">
           <div class="card mb-3">
             <div class="row g-0">
@@ -287,8 +287,8 @@
             <div class="col-sm-12 text-center col-xs-height">
               <form class="signup-popup deposit-form" data-method="other" id="withdrawOtherForm">
                 <label class="btn-block">Send To Wallet Id:</label>
-                <input class="contact-telegram" type="text" placeholder="Please Contact Us On Telegram"
-                  disabled><a href="#"><i class="fa fa-telegram"></i></a>
+                <input class="contact-telegram" type="text" placeholder="Please Contact Us On Telegram" disabled><a
+                  href="#"><i class="fa fa-telegram"></i></a>
                 <label class="btn-block">Withdraw Amount:</label>
                 <input class="col-xs-12" type="text" name="amount" required>
                 <label class="btn-block">Your Wallet Id:</label>
