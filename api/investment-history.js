@@ -32,7 +32,7 @@ $(document).ready(function () {
                 $.each(items.data, function (key, item) {
 
                     if (item.state == 0) {
-                        state = `<span class="Panding">Pendding</span>`;
+                        state = `<span class="Panding">Pending</span>`;
                     } else if (item.state == 1) {
                         state = `<span class="Progress">In Progress</span>`;
                     } else if (item.state == 2) {
@@ -57,7 +57,7 @@ $(document).ready(function () {
                         <tr>
                             <td>
                                 <p>${item.plan_name}</p>
-                                <p>${item.amount} USD</p>
+                                <p>${item.amount}$</p>
                             </td>
                             <td>
                                 <p>${item.return_amount}$ Every ${item.return_period}</p>

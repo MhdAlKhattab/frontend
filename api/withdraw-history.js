@@ -27,12 +27,12 @@ $(document).ready(function () {
             var state = '';
             var modals = '';
 
-            if (items.data.length !== 0) {
+            if (items.data.length != 0) {
 
                 $.each(items.data, function (key, item) {
 
                     if(item.state == 0){
-                        state = `<span class="Panding">Panding</span>`;
+                        state = `<span class="Panding">Pending</span>`;
                     }else if(item.state == 1){
                         state = `<span class="Complete">Complete</span>`;
                     }else{
@@ -42,17 +42,17 @@ $(document).ready(function () {
                     output += `
                         <tr>
                             <td>
-                                <p>${item.amount} USD</p>
+                                <p>${item.amount}$</p>
                                 <p>Via ${item.method}</p>
                             </td>
                             <td>
-                                <p>1 USD = 1 USD</p>
-                                <p>${item.amount} USD = ${item.amount} USD</p>
+                                <p>1$ = 1$</p>
+                                <p>${item.amount}$ = ${item.amount}$</p>
                             </td>
                             <td>
-                                <p>${item.charge} USD</p>
+                                <p>${item.charge}$</p>
                             </td>
-                            <td><span>${item.receivable} USD</span></td>
+                            <td><span>${item.receivable}$</span></td>
                             <td>
                                 ${state}
                             </td>
@@ -67,7 +67,7 @@ $(document).ready(function () {
                         aria-hidden="true">
                         <div class="modal-dialog modal-lg">
                             <div class="modal-content">
-                                <h4>More Information:</h4>
+                                <h4>Response:</h4>
                                 <div class="modal-body">
                                     <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
                                             aria-hidden="true">&times;</span></button>

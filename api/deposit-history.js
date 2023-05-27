@@ -16,7 +16,7 @@ $(document).ready(function () {
             let output = `
                 <tr style="background-color: black;">
                     <th>Transaction ID</th>
-                    <th>Gateway</th>
+                    <th>Method</th>
                     <th>Amount</th>
                     <th>Status</th>
                     <th>Time</th>
@@ -27,12 +27,12 @@ $(document).ready(function () {
             var modals = '';
             var state = '';
 
-            if (items.data.length !== 0) {
+            if (items.data.length == 0) {
 
                 $.each(items.data, function (key, item) {
 
                     if(item.state == 0){
-                        state = `<span class="Panding">Panding</span>`;
+                        state = `<span class="Panding">Pending</span>`;
                     }else if(item.state == 1){
                         state = `<span class="Complete">Complete</span>`;
                     }else{
@@ -48,7 +48,7 @@ $(document).ready(function () {
                                 <h5>${item.method}</h5>
                             </td>
                             <td>
-                                <h5>${item.amount} USD</h5>
+                                <h5>${item.amount}$</h5>
                             </td>
                             <td>${state}</td>
                             <td>
@@ -66,7 +66,7 @@ $(document).ready(function () {
                         aria-hidden="true">
                         <div class="modal-dialog modal-lg">
                             <div class="modal-content">
-                                <h4>More Information:</h4>
+                                <h4>Response:</h4>
                                 <div class="modal-body">
                                     <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
                                             aria-hidden="true">&times;</span></button>

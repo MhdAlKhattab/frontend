@@ -103,7 +103,8 @@
 }
 
 .about-us .overlay {
-  padding-top: 30vh;
+  padding-top: 10vh;
+  overflow: auto;
 }
 
 .about-us .about-us-info {
@@ -432,7 +433,7 @@
 /* Media*/
 @media (max-width: 540px) {
   .about-us .overlay .about-us-info {
-  margin-top: -15vh;
+  margin-top: 0vh;
   }
 
 }

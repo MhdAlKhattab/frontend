@@ -6,6 +6,8 @@ $(document).ready(function () {
         document.getElementById("referralInput").value = id;
     }
 
+    console.log(localStorage.getItem('access_token'), id);
+
     // Sign Up
     $("#signForm").submit(function (e) {
         e.preventDefault();
