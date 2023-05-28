@@ -14,9 +14,9 @@
 
   <script>
     // If we do not login yet
-    // if (localStorage.getItem("access_token") == null) {
-    //   window.location = 'login.html';
-    // }
+    if (localStorage.getItem("access_token") == null) {
+      window.location = 'login.html';
+    }
   </script>
 </head>
 
@@ -57,7 +57,7 @@
             <a href="#" class="dropdown-toggle nav-link" data-toggle="dropdown">Account <span class="caret"></span></a>
             <ul class="dropdown-menu" role="menu">
               <li><a href="change-password.html">Change Password</a></li>
-              <li id="checkOut"><a href="#">Cheak Out</a></li>
+              <li id="checkOut"><a href="#">Logout</a></li>
             </ul>
           </li>
         </ul>
@@ -93,7 +93,7 @@
           <div class="card mb-3">
             <div class="row g-0">
               <div class="col-lg-4">
-                <img src="image/perfectmoney.jpg" class="img-fluid rounded-start" alt="...">
+                <img src="image/perfect2.jpg" class="img-fluid rounded-start" alt="...">
               </div>
               <div class="col-lg-8">
                 <div class="card-body text-center">
@@ -205,7 +205,7 @@
           <div class="row">
             <div class="col-sm-12 text-center col-xs-height">
               <div class="signup-popup">
-                <form class="signup-popup deposit-form" data-method="perfect" data-image="" data-address="">
+                <form class="signup-popup deposit-form" data-method="perfect" data-image="" data-address="U35960081">
                   <label class="btn-block">Enter The Amount:</label>
                   <input class="col-xs-12" type="text" name="amount" placeholder="0.00" pattern="[0-9]{1,}" required>
                   <i class="fa fa-dollar"></i>

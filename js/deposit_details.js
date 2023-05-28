@@ -49,7 +49,9 @@ $(document).ready(function () {
     $('#deposit-amount').text(amount).next().text(total_amount);
 
     // Set Image
-    $('#QR').attr('src', 'image/' + localStorage.getItem('deposit-image'));
+    if(localStorage.getItem('deposit-method') != 'perfect'){
+        $('#QR').attr('src', 'image/' + localStorage.getItem('deposit-image'));
+    }
 
     // Set Address
     $('#Address').text(localStorage.getItem('deposit-address'));

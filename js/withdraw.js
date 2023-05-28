@@ -6,6 +6,8 @@ $(document).ready(function () {
     $('.withdraw-form').submit(function (e) {
         e.preventDefault();
 
+        console.log("*************************************************");
+
        localStorage.setItem("withdraw-method", $(this).data('method'));
        localStorage.setItem("withdraw-amount", this.children[1].value);
 

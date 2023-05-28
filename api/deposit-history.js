@@ -27,8 +27,7 @@ $(document).ready(function () {
             var modals = '';
             var state = '';
 
-            if (items.data.length == 0) {
-
+            if (items.data.length != 0) {
                 $.each(items.data, function (key, item) {
 
                     if(item.state == 0){

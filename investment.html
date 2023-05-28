@@ -14,9 +14,9 @@
 
   <script>
     // If we do not login yet
-    // if (localStorage.getItem("access_token") == null) {
-    //   window.location = 'login.html';
-    // }
+    if (localStorage.getItem("access_token") == null) {
+      window.location = 'login.html';
+    }
   </script>
 </head>
 
@@ -24,7 +24,6 @@
   <!-- Start Navbar -->
   <nav class=" navbar navbar-expand-lg navbar-light">
     <div class="container">
-
       <a class="navbar-brand" href="#">
         <span><img src="image/logo.png"></span>
       </a>
@@ -58,12 +57,11 @@
             <a href="#" class="dropdown-toggle nav-link" data-toggle="dropdown">Account <span class="caret"></span></a>
             <ul class="dropdown-menu" role="menu">
               <li><a href="change-password.html">Change Password</a></li>
-              <li id="checkOut"><a href="#">Cheak Out</a></li>
+              <li id="checkOut"><a href="#">Logout</a></li>
             </ul>
           </li>
         </ul>
       </div>
-
     </div>
   </nav>
   <!-- End Navbar -->

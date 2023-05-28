@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-  
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -15,9 +15,9 @@
 
   <script>
     // If we do not login yet
-    // if (localStorage.getItem("access_token") == null) {
-    //   window.location = 'login.html';
-    // }
+    if (localStorage.getItem("access_token") == null) {
+      window.location = 'login.html';
+    }
   </script>
 </head>
 
@@ -59,7 +59,7 @@
             <a href="#" class="dropdown-toggle nav-link" data-toggle="dropdown">Account <span class="caret"></span></a>
             <ul class="dropdown-menu" role="menu">
               <li><a href="change-password.html">Change Password</a></li>
-              <li id="checkOut"><a href="#">Cheak Out</a></li>
+              <li id="checkOut"><a href="#">Logout</a></li>
             </ul>
           </li>
         </ul>
@@ -99,7 +99,8 @@
             </div>
             <i class="fa fa-balance-scale"></i>
           </div>
-        </div>        <div class="col-lg-4 col-md-6">
+        </div>
+        <div class="col-lg-4 col-md-6">
           <div class="control-ba">
             <div class="control-info">
               <p>Total Deposit</p>
@@ -128,7 +129,8 @@
           </div>
         </div>
       </div>
-      <div class="buttons text-center">
+
+      <!-- <div class="buttons text-center">
         <a href="#" class="con-history" id="depositHistory">History Deposit</a>
         <a href="#" class="con-history" id="withdrawHistory">History Withdraw</a>
       </div>
@@ -144,7 +146,7 @@
             <td colspan="3" style="text-align: center;color: white;">Lodding..</td>
           </tr>
         </table>
-      </div>
+      </div> -->
 
 
 
