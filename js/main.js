@@ -12,9 +12,9 @@ $(document).ready(function () {
         resultcal =document.getElementById('resultcal'),
         selectcal = document.getElementById('selectcal');
 
-    selectcal.onchange = function(){
+        inputcal.oninput = function(){
         'use strict';
-        resultcal.value = inputcal.value * selectcal.value;
+        resultcal.value = (inputcal.value * selectcal.value) / 100;
     }
 
     $(window).scroll(function () {
