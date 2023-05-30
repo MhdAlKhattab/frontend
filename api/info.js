@@ -10,8 +10,7 @@ $(document).ready(function () {
             headers: { "Authorization": "Bearer " + localStorage.getItem('access_token') },
             dataType: 'json',
             success: function (data) {
-                console.log(data.data.referral_link);
-                $('#referral-link').empty().append(data.data.referral_link);
+                localStorage.setItem('referral-link', data.data.referral_link);
                 $('#deposit-wallet').empty().append(data.data.Deposit_balance + ' $');
                 $('#interest-wallet').empty().append(data.data.interest_balance + ' $');
                 $('#total-invest').empty().append(data.data.total_invest + ' $');

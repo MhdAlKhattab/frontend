@@ -79,7 +79,7 @@ th {
 
 th,
 td {
-    text-align: left;
+    text-align: center;
     padding: 10px;
     font-weight: 500;
 }
@@ -370,6 +370,13 @@ th {
     min-height: 100vh;
     padding-bottom: 5vh;
     color: white;
+}
+
+.referral .referral-link {
+    border: 2px solid #004085;
+    color: #FFF;
+    padding: 2vmin;
+    border-radius: 5px;
 }
 
 .referral .users {

@@ -1,6 +1,8 @@
 
 $(document).ready(function () {
 
+    $('#referral-link').empty().append(localStorage.getItem('referral-link'));
+
     getAllUsersRefferal();
 
         //  Start Get All Users Referral
