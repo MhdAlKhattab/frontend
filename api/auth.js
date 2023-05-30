@@ -15,13 +15,17 @@ $(document).ready(function () {
             },
             error: function (error) {
                 output = '';
-
-                for (var er in error.responseJSON.errors) {
-                    output += `
-                        ${error.responseJSON.errors[er][0]}
-                        <br>
-                    `;
+                if (error.responseJSON.errors) {
+                    for (var er in error.responseJSON.errors) {
+                        output += `
+                            ${error.responseJSON.errors[er][0]}
+                            <br>
+                        `;
+                    }
+                } else {
+                    output = error.responseJSON.data;
                 }
+
                 $('.error-message').empty().append('<span class="badge badge-danger">' + output + '</span>');
             }
         });
@@ -60,7 +64,19 @@ $(document).ready(function () {
                 $(location).attr('href', 'reset-password.html');
             },
             error: function (error) {
-                $('.error-message').empty().append('<span class="badge badge-danger">User Does not Exists</span>');
+                output = '';
+                if (error.responseJSON.errors) {
+                    for (var er in error.responseJSON.errors) {
+                        output += `
+                            ${error.responseJSON.errors[er][0]}
+                            <br>
+                        `;
+                    }
+                } else {
+                    output = error.responseJSON.data;
+                }
+
+                $('.error-message').empty().append('<span class="badge badge-danger">' + output + '</span>');
             }
         });
     });
