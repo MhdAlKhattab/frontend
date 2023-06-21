@@ -45,9 +45,11 @@ $(document).ready(function () {
                         maxVal = 604800;
                     } else if (item.return_period == 'month') {
                         maxVal = 2628288;
-                    } else if (item.return_period == '6 month') {
+                    } else if (item.return_period == '3months') {
+                        maxVal = 7884864;
+                    } else if (item.return_period == '6months') {
                         maxVal = 15778463;
-                    } else if (item.return_period == 'year') {
+                    } else if (item.return_period == '12months') {
                         maxVal = 31536000;
                     }
 
